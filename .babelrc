@@ -1,0 +1,14 @@
+{
+    "presets": ["es2015"],
+    "plugins": [
+        ["module-resolver", {
+            "root": [
+                "."
+            ],
+            "alias": {
+                "foundation": "./node_modules/foundation-sites/js"
+            }
+        }]
+    ]
+
+}
