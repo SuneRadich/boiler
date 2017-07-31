@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate-4.0",
+  "version": "1.0.0",
+  "description": "Boilerplate for 1508 setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://srv@gitlab.1508.dk/srv/boilerplate-4.0.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "1508 Interface",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "webpack": "^3.4.1"
+  }
+}
