@@ -10,11 +10,14 @@ import '../styles/styles.scss';
 import "./foundation";
 
 import controller from './app.controller';
-
+import Calc from './services/calculate.service';
 
 var app = angular.module('app', []);
 
-app.controller('appController', controller);
+app
+	.controller('appController', controller)
+	.factory('Calculator', Calc);
+
 
 angular.bootstrap(document, ['app']);
 
