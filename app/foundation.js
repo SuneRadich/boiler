@@ -17,7 +17,7 @@ Foundation.addToJquery($);
 // import { Box } from 'foundation/foundation.util.box'
 // import { onImagesLoaded } from 'foundation/foundation.util.imageLoader';
 // import { Keyboard } from 'foundation/foundation.util.keyboard';
-import { MediaQuery } from 'foundation/foundation.util.mediaQuery';
+// import { MediaQuery } from 'foundation/foundation.util.mediaQuery';
 // import { Motion, Move } from 'foundation/foundation.util.motion';
 // import { Nest } from 'foundation/foundation.util.nest';
 // import { Timer } from 'foundation/foundation.util.timer';
@@ -34,10 +34,10 @@ import { MediaQuery } from 'foundation/foundation.util.mediaQuery';
 
 // Touch and Triggers previously were almost purely sede effect driven,
 // so no // need to add it to Foundation, just init them.
-//import { Touch } from 'foundation/foundation.util.touch';
-//Touch.init($);
-//import { Triggers } from 'foundation/foundation.util.triggers';
-//Triggers.init($, Foundation);
+// import { Touch } from 'foundation/foundation.util.touch';
+// Touch.init($);
+// import { Triggers } from 'foundation/foundation.util.triggers';
+// Triggers.init($, Foundation);
 
 
 //Form validation
