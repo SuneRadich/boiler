@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Boilerplate 4.0</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+
 <body>
 	<article class="docs-component" id="docs-kitchen-sink">
 		<div class="row">
@@ -62,10 +64,12 @@
 						</div>
 						<div class="row">
 							<fieldset class="medium-6 columns">
-								<legend>Choose Your Favorite, and this is required, so you have to pick one.</legend> <input id="pokemonRed" name="pokemon" type="radio" value="Red"><label for="pokemonRed">Red</label> <input id="pokemonBlue" name="pokemon" required="" type="radio" value="Blue"><label for="pokemonBlue">Blue</label> <input id="pokemonYellow" name="pokemon" type="radio" value="Yellow"><label for="pokemonYellow">Yellow</label>
+								<legend>Choose Your Favorite, and this is required, so you have to pick one.</legend> <input id="pokemonRed" name="pokemon" type="radio" value="Red"><label for="pokemonRed">Red</label> <input id="pokemonBlue" name="pokemon" required="" type="radio" value="Blue">
+								<label for="pokemonBlue">Blue</label> <input id="pokemonYellow" name="pokemon" type="radio" value="Yellow"><label for="pokemonYellow">Yellow</label>
 							</fieldset>
 							<fieldset class="medium-6 columns">
-								<legend>Choose Your Favorite - not required, you can leave this one blank.</legend> <input id="pocketsRed" name="pockets" type="radio" value="Red"><label for="pocketsRed">Red</label> <input id="pocketsBlue" name="pockets" type="radio" value="Blue"><label for="pocketsBlue">Blue</label> <input id="pocketsYellow" name="pockets" type="radio" value="Yellow"><label for="pocketsYellow">Yellow</label>
+								<legend>Choose Your Favorite - not required, you can leave this one blank.</legend> <input id="pocketsRed" name="pockets" type="radio" value="Red"><label for="pocketsRed">Red</label> <input id="pocketsBlue" name="pockets" type="radio" value="Blue">
+								<label for="pocketsBlue">Blue</label> <input id="pocketsYellow" name="pockets" type="radio" value="Yellow"><label for="pocketsYellow">Yellow</label>
 							</fieldset>
 							<fieldset class="medium-6 columns">
 								<legend>Check these out</legend> <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label> <input id="checkbox2" required="" type="checkbox"><label for="checkbox2">Checkbox 2</label> <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
@@ -83,269 +87,240 @@
 				</div>
 				<hr>
 				<h2 class="docs-heading" data-magellan-target="accordion" id="accordion">Accordion<a class="docs-heading-icon" href="#accordion"></a></h2>
-			</div>
-			<div class="docs-code-live">
-				<ul class="accordion" data-accordion="rccpnq-accordion" role="tablist">
-					<li class="accordion-item is-active" data-accordion-item="">
-						<a aria-controls="6e8n6m-accordion" aria-expanded="true" aria-selected="true" class="accordion-title" href="#" id="6e8n6m-accordion-label" role="tab">Accordion 1</a>
-						<div aria-hidden="false" aria-labelledby="6e8n6m-accordion-label" class="accordion-content" data-tab-content="" id="6e8n6m-accordion" role="tabpanel" style="display: block;">
-							<p>Panel 1. Lorem ipsum dolor</p><a href="#">Nowhere to Go</a>
+
+				<ul class="accordion" data-accordion>
+					<li class="accordion-item is-active" data-accordion-item>
+						<a href="#" class="accordion-title">Accordion 1</a>
+						<div class="accordion-content" data-tab-content>
+							<p>Panel 1. Lorem ipsum dolor</p>
+							<a href="#">Nowhere to Go</a>
 						</div>
 					</li>
-					<li class="accordion-item" data-accordion-item="">
-						<a aria-controls="ttlxbr-accordion" aria-expanded="false" aria-selected="false" class="accordion-title" href="#" id="ttlxbr-accordion-label" role="tab">Accordion 2</a>
-						<div aria-hidden="true" aria-labelledby="ttlxbr-accordion-label" class="accordion-content" data-tab-content="" id="ttlxbr-accordion" role="tabpanel">
-							<textarea></textarea> <button class="button">I do nothing!</button>
+					<li class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title">Accordion 2</a>
+						<div class="accordion-content" data-tab-content>
+							<textarea></textarea>
+							<button class="button">I do nothing!</button>
 						</div>
 					</li>
-					<li class="accordion-item" data-accordion-item="">
-						<a aria-controls="jqjcsx-accordion" aria-expanded="false" aria-selected="false" class="accordion-title" href="#" id="jqjcsx-accordion-label" role="tab">Accordion 3</a>
-						<div aria-hidden="true" aria-labelledby="jqjcsx-accordion-label" class="accordion-content" data-tab-content="" id="jqjcsx-accordion" role="tabpanel">
-							Type your name! <input type="text">
+					<li class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title">Accordion 3</a>
+						<div class="accordion-content" data-tab-content>
+							Type your name!
+							<input type="text"></input>
 						</div>
 					</li>
 				</ul>
-			</div>
-			<hr>
-			<h2 class="docs-heading" data-magellan-target="accordion-menu" id="accordion-menu">Accordion Menu<a class="docs-heading-icon" href="#accordion-menu"></a></h2>
-		</div>
-		<div class="docs-code-live">
-			<ul aria-multiselectable="true" class="vertical menu" data-accordion-menu="o90zlz-accordion-menu" role="tree">
-				<li aria-controls="xlebt5-acc-menu" aria-expanded="true" class="is-accordion-submenu-parent" id="98zvxc-acc-menu-link" role="treeitem">
-					<a href="#0">Item 1</a>
-					<ul aria-hidden="false" aria-labelledby="98zvxc-acc-menu-link" class="menu vertical nested is-active submenu is-accordion-submenu" data-submenu="" id="xlebt5-acc-menu" role="group">
-						<li aria-controls="35ikhe-acc-menu" aria-expanded="false" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item" id="m71n6c-acc-menu-link" role="treeitem">
-							<a href="#0">Item 1A</a>
-							<ul aria-hidden="true" aria-labelledby="m71n6c-acc-menu-link" class="menu vertical nested submenu is-accordion-submenu" data-submenu="" id="35ikhe-acc-menu" role="group" style="display: none;">
-								<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a href="#0">Item 1Ai</a>
-								</li>
-								<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a href="#0">Item 1Aii</a>
-								</li>
-								<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a href="#0">Item 1Aiii</a>
-								</li>
-							</ul>
-						</li>
-						<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-							<a href="#0">Item 1B</a>
-						</li>
-						<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-							<a href="#0">Item 1C</a>
-						</li>
-					</ul>
-				</li>
-				<li aria-controls="xy48gx-acc-menu" aria-expanded="false" class="is-accordion-submenu-parent" id="u3vt41-acc-menu-link" role="treeitem">
-					<a href="#0">Item 2</a>
-					<ul aria-hidden="true" aria-labelledby="u3vt41-acc-menu-link" class="menu vertical nested submenu is-accordion-submenu" data-submenu="" id="xy48gx-acc-menu" role="group" style="display: none;">
-						<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-							<a href="#0">Item 2A</a>
-						</li>
-						<li class="is-submenu-item is-accordion-submenu-item" role="treeitem">
-							<a href="#0">Item 2B</a>
-						</li>
-					</ul>
-				</li>
-				<li role="treeitem">
-					<a href="#0">Item 3</a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="badge" id="badge">Badge<a class="docs-heading-icon" href="#badge"></a></h2>
-		<div class="docs-code-live">
-			<span class="primary badge">1</span> <span class="secondary badge">2</span> <span class="success badge">3</span> <span class="alert badge">A</span> <span class="warning badge">B</span>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="breadcrumbs" id="breadcrumbs">Breadcrumbs<a class="docs-heading-icon" href="#breadcrumbs"></a></h2>
-		<div class="docs-code-live">
-			<nav aria-label="You are here:" role="navigation">
-				<ul class="breadcrumbs">
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="accordion-menu" id="accordion-menu">Accordion Menu<a class="docs-heading-icon" href="#accordion-menu"></a></h2>
+
+				<ul class="vertical menu" data-accordion-menu>
 					<li>
-						<a href="#0">Home</a>
-					</li>
-					<li>
-						<a href="#0">Features</a>
-					</li>
-					<li class="disabled">Gene Splicing</li>
-					<li><span class="show-for-sr">Current:</span> Cloning</li>
-				</ul>
-			</nav>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="button" id="button">Button<a class="docs-heading-icon" href="#button"></a></h2>
-		<div class="docs-code-live">
-			<!-- Anchors (links) -->
-			<a class="button" href="#0">Learn More</a> <a class="button" href="#features">View All Features</a> <!-- Buttons (actions) -->
-			 <button class="success button" type="button">Save</button> <button class="alert button" type="button">Delete</button> <a class="tiny button" href="#0">So Tiny</a> <a class="small button" href="#0">So Small</a> <a class="large button" href="#0">So Large</a> <a class="expanded button" href="#0">Such Expand</a>
-			<div class="button-group">
-				<a class="button">One</a> <a class="button">Two</a> <a class="button">Three</a>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="callout" id="callout">Callout<a class="docs-heading-icon" href="#callout"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/XRqjxj?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<div class="callout">
-				<h5>This is a callout.</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-			<div class="callout primary">
-				<h5>This is a primary callout.</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-			<div class="callout secondary">
-				<h5>This is a secondary callout</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-			<div class="callout success">
-				<h5>This is a success callout</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-			<div class="callout warning">
-				<h5>This is a warning callout</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-			<div class="callout alert">
-				<h5>This is an alert callout</h5>
-				<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="close-button" id="close-button">Close Button<a class="docs-heading-icon" href="#close-button"></a></h2>
-		<div class="docs-code-live">
-			<div class="callout">
-				<button aria-label="Close alert" class="close-button" type="button"><span aria-hidden="true">×</span></button>
-				<p>This is a static close button example.</p>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="drilldown-menu" id="drilldown-menu">Drilldown Menu<a class="docs-heading-icon" href="#drilldown-menu"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/mmLrZz?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<div class="is-drilldown" style="min-height: 230.25px; max-width: 200px;">
-				<ul aria-multiselectable="false" class="vertical menu drilldown" data-drilldown="jdwkda-drilldown" data-mutate="f8rsx0-drilldown" id="m1" role="tree" style="width: 200px">
-					<li aria-expanded="false" aria-haspopup="true" aria-label="Item 1" class="is-drilldown-submenu-parent" role="treeitem">
-						<a tabindex="0">Item 1</a>
-						<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" id="m2" role="group">
-							<li class="js-drilldown-back">
-								<a tabindex="0">Back</a>
+						<a href="#0">Item 1</a>
+						<ul class="menu vertical nested is-active">
+							<li>
+								<a href="#0">Item 1A</a>
+								<ul class="menu vertical nested">
+									<li><a href="#0">Item 1Ai</a></li>
+									<li><a href="#0">Item 1Aii</a></li>
+									<li><a href="#0">Item 1Aiii</a></li>
+								</ul>
 							</li>
-							<li aria-expanded="false" aria-haspopup="true" aria-label="Item 1A" class="is-drilldown-submenu-parent is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a tabindex="0">Item 1A</a>
-								<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" id="m3" role="group">
+							<li><a href="#0">Item 1B</a></li>
+							<li><a href="#0">Item 1C</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#0">Item 2</a>
+						<ul class="menu vertical nested">
+							<li><a href="#0">Item 2A</a></li>
+							<li><a href="#0">Item 2B</a></li>
+						</ul>
+					</li>
+					<li><a href="#0">Item 3</a></li>
+				</ul>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="badge" id="badge">Badge<a class="docs-heading-icon" href="#badge"></a></h2>
+				<span class="primary badge">1</span>
+				<span class="secondary badge">2</span>
+				<span class="success badge">3</span>
+				<span class="alert badge">A</span>
+				<span class="warning badge">B</span>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="breadcrumbs" id="breadcrumbs">Breadcrumbs<a class="docs-heading-icon" href="#breadcrumbs"></a></h2>
+				<div class="docs-code-live">
+					<nav aria-label="You are here:" role="navigation">
+						<ul class="breadcrumbs">
+							<li>
+								<a href="#0">Home</a>
+							</li>
+							<li>
+								<a href="#0">Features</a>
+							</li>
+							<li class="disabled">Gene Splicing</li>
+							<li><span class="show-for-sr">Current:</span> Cloning</li>
+						</ul>
+					</nav>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="button" id="button">Button<a class="docs-heading-icon" href="#button"></a></h2>
+				<div class="docs-code-live">
+					<!-- Anchors (links) -->
+					<a class="button" href="#0">Learn More</a> <a class="button" href="#features">View All Features</a>
+					<!-- Buttons (actions) -->
+					<button class="success button" type="button">Save</button> <button class="alert button" type="button">Delete</button> <a class="tiny button" href="#0">So Tiny</a> <a class="small button" href="#0">So Small</a> <a class="large button" href="#0">So Large</a>					<a class="expanded button" href="#0">Such Expand</a>
+					<div class="button-group">
+						<a class="button">One</a> <a class="button">Two</a> <a class="button">Three</a>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="callout" id="callout">Callout<a class="docs-heading-icon" href="#callout"></a></h2>
+
+				<div class="docs-code-live">
+					<div class="callout">
+						<h5>This is a callout.</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+					<div class="callout primary">
+						<h5>This is a primary callout.</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+					<div class="callout secondary">
+						<h5>This is a secondary callout</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+					<div class="callout success">
+						<h5>This is a success callout</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+					<div class="callout warning">
+						<h5>This is a warning callout</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+					<div class="callout alert">
+						<h5>This is an alert callout</h5>
+						<p>It has an easy to override visual style, and is appropriately subdued.</p><a href="#0">It's dangerous to go alone, take this.</a>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="close-button" id="close-button">Close Button<a class="docs-heading-icon" href="#close-button"></a></h2>
+				<div class="docs-code-live">
+					<div class="callout">
+						<button aria-label="Close alert" class="close-button" type="button"><span aria-hidden="true">×</span></button>
+						<p>This is a static close button example.</p>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="drilldown-menu" id="drilldown-menu">Drilldown Menu<a class="docs-heading-icon" href="#drilldown-menu"></a></h2>
+
+				<div class="docs-code-live">
+					<div class="is-drilldown" style="min-height: 230.25px; max-width: 200px;">
+						<ul aria-multiselectable="false" class="vertical menu drilldown" data-drilldown="jdwkda-drilldown" data-mutate="f8rsx0-drilldown" id="m1" role="tree" style="width: 200px">
+							<li aria-expanded="false" aria-haspopup="true" aria-label="Item 1" class="is-drilldown-submenu-parent" role="treeitem">
+								<a tabindex="0">Item 1</a>
+								<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" id="m2" role="group">
+									<li class="js-drilldown-back">
+										<a tabindex="0">Back</a>
+									</li>
+									<li aria-expanded="false" aria-haspopup="true" aria-label="Item 1A" class="is-drilldown-submenu-parent is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a tabindex="0">Item 1A</a>
+										<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" id="m3" role="group">
+											<li class="js-drilldown-back">
+												<a tabindex="0">Back</a>
+											</li>
+											<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+												<a href="#0">Item 1Aa</a>
+											</li>
+											<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+												<a href="#0">Item 1Ba</a>
+											</li>
+											<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+												<a href="#0">Item 1Ca</a>
+											</li>
+											<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+												<a href="#0">Item 1Da</a>
+											</li>
+											<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+												<a href="#0">Item 1Ea</a>
+											</li>
+										</ul>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 1B</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 1C</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 1D</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 1E</a>
+									</li>
+								</ul>
+							</li>
+							<li aria-expanded="false" aria-haspopup="true" aria-label="Item 2" class="is-drilldown-submenu-parent" role="treeitem">
+								<a tabindex="0">Item 2</a>
+								<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" role="group">
 									<li class="js-drilldown-back">
 										<a tabindex="0">Back</a>
 									</li>
 									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-										<a href="#0">Item 1Aa</a>
+										<a href="#0">Item 2A</a>
 									</li>
 									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-										<a href="#0">Item 1Ba</a>
+										<a href="#0">Item 2B</a>
 									</li>
 									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-										<a href="#0">Item 1Ca</a>
+										<a href="#0">Item 2C</a>
 									</li>
 									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-										<a href="#0">Item 1Da</a>
+										<a href="#0">Item 2D</a>
 									</li>
 									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-										<a href="#0">Item 1Ea</a>
+										<a href="#0">Item 2E</a>
 									</li>
 								</ul>
 							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 1B</a>
+							<li aria-expanded="false" aria-haspopup="true" aria-label="Item 3" class="is-drilldown-submenu-parent" role="treeitem">
+								<a tabindex="0">Item 3</a>
+								<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" role="group">
+									<li class="js-drilldown-back">
+										<a tabindex="0">Back</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 3A</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 3B</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 3C</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 3D</a>
+									</li>
+									<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
+										<a href="#0">Item 3E</a>
+									</li>
+								</ul>
 							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 1C</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 1D</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 1E</a>
-							</li>
-						</ul>
-					</li>
-					<li aria-expanded="false" aria-haspopup="true" aria-label="Item 2" class="is-drilldown-submenu-parent" role="treeitem">
-						<a tabindex="0">Item 2</a>
-						<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" role="group">
-							<li class="js-drilldown-back">
-								<a tabindex="0">Back</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 2A</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 2B</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 2C</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 2D</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 2E</a>
+							<li role="treeitem">
+								<a href="#0">Item 4</a>
 							</li>
 						</ul>
-					</li>
-					<li aria-expanded="false" aria-haspopup="true" aria-label="Item 3" class="is-drilldown-submenu-parent" role="treeitem">
-						<a tabindex="0">Item 3</a>
-						<ul aria-hidden="true" class="vertical menu submenu is-drilldown-submenu invisible drilldown-submenu-cover-previous" data-submenu="" role="group">
-							<li class="js-drilldown-back">
-								<a tabindex="0">Back</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 3A</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 3B</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 3C</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 3D</a>
-							</li>
-							<li class="is-submenu-item is-drilldown-submenu-item" role="treeitem">
-								<a href="#0">Item 3E</a>
-							</li>
-						</ul>
-					</li>
-					<li role="treeitem">
-						<a href="#0">Item 4</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="dropdown-menu" id="dropdown-menu">Dropdown Menu<a class="docs-heading-icon" href="#dropdown-menu"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/jmxVPP?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<ul class="dropdown menu" data-dropdown-menu="cou1lu-dropdown-menu" role="menubar">
-				<li aria-haspopup="true" aria-label="Item 1" class="is-dropdown-submenu-parent opens-right" role="menuitem">
-					<a>Item 1</a>
-					<ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu">
-						<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-							<a href="#0">Item 1A Loooong</a>
-						</li>
-						<li aria-haspopup="true" aria-label=" Item 1 sub" class="is-dropdown-submenu-parent is-submenu-item is-dropdown-submenu-item opens-right" role="menuitem">
-							<a href="#0">Item 1 sub</a>
-							<ul class="menu submenu is-dropdown-submenu vertical" data-submenu="" role="menu">
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="dropdown-menu" id="dropdown-menu">Dropdown Menu<a class="docs-heading-icon" href="#dropdown-menu"></a></h2>
+
+				<div class="docs-code-live">
+					<ul class="dropdown menu" data-dropdown-menu="cou1lu-dropdown-menu" role="menubar">
+						<li aria-haspopup="true" aria-label="Item 1" class="is-dropdown-submenu-parent opens-right" role="menuitem">
+							<a>Item 1</a>
+							<ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu">
 								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Item 1 subA</a>
-								</li>
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Item 1 subB</a>
+									<a href="#0">Item 1A Loooong</a>
 								</li>
 								<li aria-haspopup="true" aria-label=" Item 1 sub" class="is-dropdown-submenu-parent is-submenu-item is-dropdown-submenu-item opens-right" role="menuitem">
 									<a href="#0">Item 1 sub</a>
@@ -356,126 +331,119 @@
 										<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
 											<a href="#0">Item 1 subB</a>
 										</li>
-									</ul>
-								</li>
-								<li aria-haspopup="true" aria-label=" Item 1 sub" class="is-dropdown-submenu-parent is-submenu-item is-dropdown-submenu-item opens-right" role="menuitem">
-									<a href="#0">Item 1 sub</a>
-									<ul class="menu submenu is-dropdown-submenu vertical" data-submenu="" role="menu">
-										<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-											<a href="#0">Item 1 subA</a>
+										<li aria-haspopup="true" aria-label=" Item 1 sub" class="is-dropdown-submenu-parent is-submenu-item is-dropdown-submenu-item opens-right" role="menuitem">
+											<a href="#0">Item 1 sub</a>
+											<ul class="menu submenu is-dropdown-submenu vertical" data-submenu="" role="menu">
+												<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+													<a href="#0">Item 1 subA</a>
+												</li>
+												<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+													<a href="#0">Item 1 subB</a>
+												</li>
+											</ul>
+										</li>
+										<li aria-haspopup="true" aria-label=" Item 1 sub" class="is-dropdown-submenu-parent is-submenu-item is-dropdown-submenu-item opens-right" role="menuitem">
+											<a href="#0">Item 1 sub</a>
+											<ul class="menu submenu is-dropdown-submenu vertical" data-submenu="" role="menu">
+												<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+													<a href="#0">Item 1 subA</a>
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</li>
+								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+									<a href="#0">Item 1B</a>
+								</li>
 							</ul>
 						</li>
-						<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-							<a href="#0">Item 1B</a>
+						<li aria-haspopup="true" aria-label="Item 2" class="is-dropdown-submenu-parent opens-right" role="menuitem">
+							<a href="#0">Item 2</a>
+							<ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu">
+								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+									<a href="#0">Item 2A</a>
+								</li>
+								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
+									<a href="#0">Item 2B</a>
+								</li>
+							</ul>
+						</li>
+						<li role="menuitem">
+							<a href="#0">Item 3</a>
+						</li>
+						<li role="menuitem">
+							<a href="#0">Item 4</a>
 						</li>
 					</ul>
-				</li>
-				<li aria-haspopup="true" aria-label="Item 2" class="is-dropdown-submenu-parent opens-right" role="menuitem">
-					<a href="#0">Item 2</a>
-					<ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu">
-						<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-							<a href="#0">Item 2A</a>
-						</li>
-						<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-							<a href="#0">Item 2B</a>
-						</li>
-					</ul>
-				</li>
-				<li role="menuitem">
-					<a href="#0">Item 3</a>
-				</li>
-				<li role="menuitem">
-					<a href="#0">Item 4</a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="dropdown-pane" id="dropdown-pane">Dropdown Pane<a class="docs-heading-icon" href="#dropdown-pane"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/QvrGGj?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<button aria-controls="example-dropdown" aria-expanded="false" aria-haspopup="true" class="button" data-is-focus="false" data-toggle="example-dropdown" data-yeti-box="example-dropdown" type="button">Toggle Dropdown</button>
-			<div aria-hidden="true" aria-labelledby="p61qie-dd-anchor" class="dropdown-pane" data-dropdown="rrdq7k-dropdown" data-events="resize" data-resize="example-dropdown" data-yeti-box="example-dropdown" id="example-dropdown">
-				Just some junk that needs to be said. Or not. Your choice.
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="equalizer" id="equalizer">Equalizer<a class="docs-heading-icon" href="#equalizer"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/mmLBEa?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<div class="row" data-equalize-on="medium" data-equalizer="sxhqgf-equalizer" data-events="mutate" data-mutate="6pu6ry-eq" data-resize="j0ie78-eq" id="test-eq">
-				<div class="medium-4 columns">
-					<div class="callout" data-equalizer-watch="" style="height: 227px;"><img src="assets/img/generic/square-1.jpg"></div>
 				</div>
-				<div class="medium-4 columns">
-					<div class="callout" data-equalizer-watch="" style="height: 227px;">
-						<p>Pellentesque habitant morbi tristique senectus et netus et, ante.</p>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="dropdown-pane" id="dropdown-pane">Dropdown Pane<a class="docs-heading-icon" href="#dropdown-pane"></a></h2>
+
+				<div class="docs-code-live">
+					<button aria-controls="example-dropdown" aria-expanded="false" aria-haspopup="true" class="button" data-is-focus="false" data-toggle="example-dropdown" data-yeti-box="example-dropdown" type="button">Toggle Dropdown</button>
+					<div aria-hidden="true" aria-labelledby="p61qie-dd-anchor" class="dropdown-pane" data-dropdown="rrdq7k-dropdown" data-events="resize" data-resize="example-dropdown" data-yeti-box="example-dropdown" id="example-dropdown">
+						Just some junk that needs to be said. Or not. Your choice.
 					</div>
 				</div>
-				<div class="medium-4 columns">
-					<div class="callout" data-equalizer-watch="" style="height: 227px;"><img src="assets/img/generic/rectangle-1.jpg"></div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="equalizer" id="equalizer">Equalizer<a class="docs-heading-icon" href="#equalizer"></a></h2>
+
+				<div class="docs-code-live">
+					<div class="row" data-equalize-on="medium" data-equalizer="sxhqgf-equalizer" data-events="mutate" data-mutate="6pu6ry-eq" data-resize="j0ie78-eq" id="test-eq">
+						<div class="medium-4 columns">
+							<div class="callout" data-equalizer-watch="" style="height: 227px;"><img src="http://lorempixel.com/400/400/tech"></div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="callout" data-equalizer-watch="" style="height: 227px;">
+								<p>Pellentesque habitant morbi tristique senectus et netus et, ante.</p>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="callout" data-equalizer-watch="" style="height: 227px;"><img src="assets/img/generic/rectangle-1.jpg"></div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="flex-grid" id="flex-grid">Flex Grid<a class="docs-heading-icon" href="#flex-grid"></a></h2><a class="docs-code-toggle">Toggle Code</a>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/ZURBFoundation/pen/dWmVax?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="row display">
-			<div class="small-6 columns">
-				6 columns
-			</div>
-			<div class="small-6 columns">
-				6 columns
-			</div>
-		</div>
-		<div class="row display">
-			<div class="medium-6 large-4 columns">
-				12/6/4 columns
-			</div>
-			<div class="medium-6 large-8 columns">
-				12/6/8 columns
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="responsive-embed" id="responsive-embed">Responsive Embed<a class="docs-heading-icon" href="#responsive-embed"></a></h2>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/MmGEbb?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code kitchen-sink" data-docs-code="" style="display: none;">
-			<button class="docs-code-copy" id="copy-btn-13">Copy</button>
-			<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"responsive-embed"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"420"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/mM5_T-F1Yn4"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-		</div>
-		<div class="docs-code-live">
-			<div class="responsive-embed">
-				<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4" width="420"></iframe>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="float-classes" id="float-classes">Float Classes<a class="docs-heading-icon" href="#float-classes"></a></h2>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/zwjEPP?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="docs-code-live">
-			<div class="callout clearfix">
-				<a class="button float-left">Left</a> <a class="button float-right">Right</a>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="forms" id="forms">Forms<a class="docs-heading-icon" href="#forms"></a></h2>
-		<div class="docs-code-live">
-			<form>
-				<label>Input Label <input aria-describedby="exampleHelpText" placeholder=".small-12.columns" type="text"></label>
-				<p class="help-text" id="exampleHelpText">Here's how you use this input field!</p><label>How many puppies? <input type="number" value="100"></label> <label>What books did you read over summer break?
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="flex-grid" id="flex-grid">Flex Grid<a class="docs-heading-icon" href="#flex-grid"></a></h2>
+
+				<div class="row display">
+					<div class="small-6 columns">
+						6 columns
+					</div>
+					<div class="small-6 columns">
+						6 columns
+					</div>
+				</div>
+				<div class="row display">
+					<div class="medium-6 large-4 columns">
+						12/6/4 columns
+					</div>
+					<div class="medium-6 large-8 columns">
+						12/6/8 columns
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="responsive-embed" id="responsive-embed">Responsive Embed<a class="docs-heading-icon" href="#responsive-embed"></a></h2>
+
+				<div class="docs-code-live">
+					<div class="responsive-embed">
+						<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4" width="420"></iframe>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="float-classes" id="float-classes">Float Classes<a class="docs-heading-icon" href="#float-classes"></a></h2>
+
+				<div class="docs-code-live">
+					<div class="callout clearfix">
+						<a class="button float-left">Left</a> <a class="button float-right">Right</a>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="forms" id="forms">Forms<a class="docs-heading-icon" href="#forms"></a></h2>
+				<div class="docs-code-live">
+					<form>
+						<label>Input Label <input aria-describedby="exampleHelpText" placeholder=".small-12.columns" type="text"></label>
+						<p class="help-text" id="exampleHelpText">Here's how you use this input field!</p><label>How many puppies? <input type="number" value="100"></label> <label>What books did you read over summer break?
 				<textarea placeholder="None"></textarea></label> <label>Select Menu <select>
 					<option value="husker">
 						Husker
@@ -490,528 +458,523 @@
 						Apollo
 					</option>
 				</select></label>
-				<div class="row">
-					<fieldset class="large-6 columns">
-						<legend>Choose Your Favorite</legend> <input id="pokemonRed" name="pokemon" required="" type="radio" value="Red"><label for="pokemonRed">Red</label> <input id="pokemonBlue" name="pokemon" type="radio" value="Blue"><label for="pokemonBlue">Blue</label> <input id="pokemonYellow" name="pokemon" type="radio" value="Yellow"><label for="pokemonYellow">Yellow</label>
-					</fieldset>
-					<fieldset class="large-6 columns">
-						<legend>Check these out</legend> <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label> <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label> <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-					</fieldset>
+						<div class="row">
+							<fieldset class="large-6 columns">
+								<legend>Choose Your Favorite</legend> <input id="pokemonRed" name="pokemon" required="" type="radio" value="Red"><label for="pokemonRed">Red</label> <input id="pokemonBlue" name="pokemon" type="radio" value="Blue"><label for="pokemonBlue">Blue</label>								<input id="pokemonYellow" name="pokemon" type="radio" value="Yellow"><label for="pokemonYellow">Yellow</label>
+							</fieldset>
+							<fieldset class="large-6 columns">
+								<legend>Check these out</legend> <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label> <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label> <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+							</fieldset>
+						</div>
+						<div class="row">
+							<div class="small-3 columns">
+								<label class="text-right middle" for="middle-label">Label</label>
+							</div>
+							<div class="small-9 columns">
+								<input id="middle-label" placeholder="Right- and middle-aligned text input" type="text">
+							</div>
+						</div>
+						<div class="input-group">
+							<span class="input-group-label">$</span> <input class="input-group-field" type="url">
+							<div class="input-group-button">
+								<input class="button" type="submit" value="Submit">
+							</div>
+						</div>
+					</form>
 				</div>
-				<div class="row">
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="grid" id="grid">Grid<a class="docs-heading-icon" href="#grid"></a></h2>
+
+				<div class="row display">
+					<div class="small-2 medium-3 large-4 columns">
+						2/3/4 columns
+					</div>
+					<div class="small-4 medium-3 large-4 columns">
+						4/3/4 columns
+					</div>
+					<div class="small-6 large-4 columns">
+						6/6/4 columns
+					</div>
+				</div>
+				<div class="row display">
+					<div class="large-3 columns">
+						12/12/3 columns
+					</div>
+					<div class="large-6 columns">
+						12/12/6 columns
+					</div>
+					<div class="large-3 columns">
+						12/12/3 columns
+					</div>
+				</div>
+				<div class="row display">
+					<div class="small-6 large-2 columns">
+						6/6/2 columns
+					</div>
+					<div class="small-6 large-8 columns">
+						6/6/8 columns
+					</div>
+					<div class="small-12 large-2 columns">
+						12/12/2 columns
+					</div>
+				</div>
+				<div class="row display">
 					<div class="small-3 columns">
-						<label class="text-right middle" for="middle-label">Label</label>
+						3 columns
 					</div>
 					<div class="small-9 columns">
-						<input id="middle-label" placeholder="Right- and middle-aligned text input" type="text">
+						9 columns
 					</div>
 				</div>
-				<div class="input-group">
-					<span class="input-group-label">$</span> <input class="input-group-field" type="url">
-					<div class="input-group-button">
-						<input class="button" type="submit" value="Submit">
+				<div class="row display">
+					<div class="medium-8 large-4 columns">
+						12/8/4 columns
+					</div>
+					<div class="medium-4 large-8 columns">
+						12/4/8 columns
 					</div>
 				</div>
-			</form>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="grid" id="grid">Grid<a class="docs-heading-icon" href="#grid"></a></h2>
-		<div class="docs-codepen-container kitchen-sink" data-ks-codepen="" style="display: none;">
-			<a class="codepen-logo-link" href="https://codepen.io/IamManchanda/pen/rmvEBJ?editors=1000" target="_blank"><img alt="edit on codepen button" class="" height="" src="assets/img/logos/edit-in-browser.svg" width=""></a>
-		</div>
-		<div class="row display">
-			<div class="small-2 medium-3 large-4 columns">
-				2/3/4 columns
-			</div>
-			<div class="small-4 medium-3 large-4 columns">
-				4/3/4 columns
-			</div>
-			<div class="small-6 large-4 columns">
-				6/6/4 columns
-			</div>
-		</div>
-		<div class="row display">
-			<div class="large-3 columns">
-				12/12/3 columns
-			</div>
-			<div class="large-6 columns">
-				12/12/6 columns
-			</div>
-			<div class="large-3 columns">
-				12/12/3 columns
-			</div>
-		</div>
-		<div class="row display">
-			<div class="small-6 large-2 columns">
-				6/6/2 columns
-			</div>
-			<div class="small-6 large-8 columns">
-				6/6/8 columns
-			</div>
-			<div class="small-12 large-2 columns">
-				12/12/2 columns
-			</div>
-		</div>
-		<div class="row display">
-			<div class="small-3 columns">
-				3 columns
-			</div>
-			<div class="small-9 columns">
-				9 columns
-			</div>
-		</div>
-		<div class="row display">
-			<div class="medium-8 large-4 columns">
-				12/8/4 columns
-			</div>
-			<div class="medium-4 large-8 columns">
-				12/4/8 columns
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="interchange" id="interchange">Interchange<a class="docs-heading-icon" href="#interchange"></a></h2>
-		<div class="docs-code-live"><img data-events="resize" data-interchange="[assets/img/interchange/small.jpg, small], [assets/img/interchange/medium.jpg, medium], [assets/img/interchange/large.jpg, large]" data-resize="k593wu-interchange" id="k593wu-interchange" src="assets/img/interchange/large.jpg"></div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="label" id="label">Label<a class="docs-heading-icon" href="#label"></a></h2>
-		<div class="docs-code-live">
-			<span class="primary label">Primary Label</span> <span class="secondary label">Secondary Label</span> <span class="success label">Success Label</span> <span class="alert label">Alert Label</span> <span class="warning label">Warning Label</span>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="magellan" id="magellan">Magellan<a class="docs-heading-icon" href="#magellan"></a></h2>
-		<ul class="horizontal menu" data-events="scroll" data-magellan="sgj21j-magellan" data-resize="m2tb22-magellan" data-scroll="m2tb22-magellan" id="m2tb22-magellan">
-			<li>
-				<a href="#first">First Arrival</a>
-			</li>
-			<li>
-				<a href="#second">Second Arrival</a>
-			</li>
-			<li>
-				<a href="#third">Third Arrival</a>
-			</li>
-		</ul>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="media-object" id="media-object">Media Object<a class="docs-heading-icon" href="#media-object"></a></h2>
-		<div class="docs-code-live">
-			<div class="media-object">
-				<div class="media-object-section"><img src="http://placeimg.com/200/200/people"></div>
-				<div class="media-object-section">
-					<h4>Dreams feel real while we're in them.</h4>
-					<p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="interchange" id="interchange">Interchange<a class="docs-heading-icon" href="#interchange"></a></h2>
+				<div class="docs-code-live"><img data-events="resize" data-interchange="[assets/img/interchange/small.jpg, small], [assets/img/interchange/medium.jpg, medium], [assets/img/interchange/large.jpg, large]" data-resize="k593wu-interchange" id="k593wu-interchange" src="assets/img/interchange/large.jpg"></div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="label" id="label">Label<a class="docs-heading-icon" href="#label"></a></h2>
+				<div class="docs-code-live">
+					<span class="primary label">Primary Label</span> <span class="secondary label">Secondary Label</span> <span class="success label">Success Label</span> <span class="alert label">Alert Label</span> <span class="warning label">Warning Label</span>
 				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="menu" id="menu">Menu<a class="docs-heading-icon" href="#menu"></a></h2>
-		<div class="docs-code-live">
-			<ul class="menu">
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>One</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="off-canvas" id="off-canvas">Off-canvas<a class="docs-heading-icon" href="#off-canvas"></a></h2>
-		<div class="docs-code-live">
-			<!-- Set up Off-canvas -->
-			<div class="off-canvas-wrapper">
-				<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
-					<div aria-hidden="true" class="off-canvas position-left is-transition-push is-closed" data-off-canvas="smtfc2-off-canvas" id="offCanvasLeft">
-						<!-- left off-canvas markup -->
-					</div>
-					<div class="js-off-canvas-overlay is-overlay-fixed"></div>
-					<div aria-hidden="true" class="off-canvas position-right is-transition-push is-closed" data-off-canvas="8pkozb-off-canvas" data-position="right" id="offCanvasRight">
-						<!-- right off-canvas markup -->
-					</div>
-					<div class="js-off-canvas-overlay is-overlay-fixed"></div>
-					<div class="off-canvas-content" data-off-canvas-content="">
-						<!-- page content -->
-					</div>
-				</div>
-			</div><!-- Fire Off-canvas -->
-			<button aria-controls="offCanvasLeft" aria-expanded="false" class="button" data-toggle="offCanvasLeft" type="button">Open Menu</button>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="orbit" id="orbit">Orbit<a class="docs-heading-icon" href="#orbit"></a></h2>
-		<div class="docs-code-live">
-			<div aria-label="Favorite Text Ever" class="orbit" data-events="resize" data-orbit="r67p2v-orbit" data-resize="02dl5w-orbit" id="02dl5w-orbit" role="region">
-				<ul class="orbit-container" style="height: 231px;" tabindex="0">
-					<li style="list-style: none"><button aria-label="previous" class="orbit-previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀</button> <button aria-label="next" class="orbit-next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶</button></li>
-					<li class="orbit-slide" data-slide="0" style="position: relative; top: 0px; display: none;">
-						<div class="docs-example-orbit-slide">
-							<p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="magellan" id="magellan">Magellan<a class="docs-heading-icon" href="#magellan"></a></h2>
+				<ul class="horizontal menu" data-events="scroll" data-magellan="sgj21j-magellan" data-resize="m2tb22-magellan" data-scroll="m2tb22-magellan" id="m2tb22-magellan">
+					<li>
+						<a href="#first">First Arrival</a>
 					</li>
-					<li aria-live="polite" class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;">
-						<div class="docs-example-orbit-slide">
-							<p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+					<li>
+						<a href="#second">Second Arrival</a>
 					</li>
-					<li class="orbit-slide" data-slide="2" style="position: relative; top: 0px; display: none;">
-						<div class="docs-example-orbit-slide">
-							<p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</li>
-					<li class="orbit-slide" data-slide="3" style="position: relative; top: 0px; display: none;">
-						<div class="docs-example-orbit-slide">
-							<p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+					<li>
+						<a href="#third">Third Arrival</a>
 					</li>
 				</ul>
-				<nav class="orbit-bullets">
-					<button class="" data-slide="0"><span class="show-for-sr">First slide details.</span></button> <button class="is-active" data-slide="1"><span class="show-for-sr">Second slide details.</span><span class="show-for-sr">Current Slide</span></button> <button class="" data-slide="2"><span class="show-for-sr">Third slide details.</span></button> <button class="" data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-				</nav>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="pagination" id="pagination">Pagination<a class="docs-heading-icon" href="#pagination"></a></h2>
-		<div class="docs-code-live">
-			<ul aria-label="Pagination" class="pagination" role="navigation">
-				<li class="disabled">Previous <span class="show-for-sr">page</span></li>
-				<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-				<li>
-					<a aria-label="Page 2" href="#0">2</a>
-				</li>
-				<li>
-					<a aria-label="Page 3" href="#0">3</a>
-				</li>
-				<li>
-					<a aria-label="Page 4" href="#0">4</a>
-				</li>
-				<li aria-hidden="true" class="ellipsis"></li>
-				<li>
-					<a aria-label="Page 12" href="#0">12</a>
-				</li>
-				<li>
-					<a aria-label="Page 13" href="#0">13</a>
-				</li>
-				<li>
-					<a aria-label="Next page" href="#0">Next <span class="show-for-sr">page</span></a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="progress-bar" id="progress-bar">Progress Bar<a class="docs-heading-icon" href="#progress-bar"></a></h2>
-		<div class="docs-code-live">
-			<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-valuetext="25 percent" class="primary progress" role="progressbar" tabindex="0">
-				<div class="progress-meter" style="width: 25%">
-					<p class="progress-meter-text">25%</p>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="media-object" id="media-object">Media Object<a class="docs-heading-icon" href="#media-object"></a></h2>
+				<div class="docs-code-live">
+					<div class="media-object">
+						<div class="media-object-section"><img src="http://placeimg.com/200/200/people"></div>
+						<div class="media-object-section">
+							<h4>Dreams feel real while we're in them.</h4>
+							<p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="warning progress">
-				<div class="progress-meter" style="width: 50%">
-					<p class="progress-meter-text">50%</p>
-				</div>
-			</div>
-			<div class="alert progress">
-				<div class="progress-meter" style="width: 75%">
-					<p class="progress-meter-text">75%</p>
-				</div>
-			</div>
-			<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100 percent" class="success progress" role="progressbar" tabindex="0">
-				<div class="progress-meter" style="width: 100%">
-					<p class="progress-meter-text">100%</p>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="responsive-menu" id="responsive-menu">Responsive Menu<a class="docs-heading-icon" href="#responsive-menu"></a></h2>
-		<div class="docs-code-live">
-			<ul class="vertical medium-horizontal menu">
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>One</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="responsive-toggle" id="responsive-toggle">Responsive Toggle<a class="docs-heading-icon" href="#responsive-toggle"></a></h2>
-		<div class="docs-code-live">
-			<div class="title-bar" data-hide-for="medium" data-responsive-toggle="example-menu" style="display: none;">
-				<button class="menu-icon" data-toggle="" type="button"></button>
-				<div class="title-bar-title">
-					Menu
-				</div>
-			</div>
-			<div class="top-bar" id="example-menu" style="">
-				<div class="top-bar-left">
-					<ul class="dropdown menu" data-dropdown-menu="494lce-dropdown-menu" role="menubar">
-						<li class="menu-text" role="menuitem">Site Title</li>
-						<li aria-haspopup="true" aria-label="One" class="has-submenu is-dropdown-submenu-parent opens-right" data-is-click="false" role="menuitem">
-							<a href="#0">One</a>
-							<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">One</a>
-								</li>
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Two</a>
-								</li>
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Three</a>
-								</li>
-							</ul>
-						</li>
-						<li role="menuitem">
-							<a href="#0">Two</a>
-						</li>
-						<li role="menuitem">
-							<a href="#0">Three</a>
-						</li>
-					</ul>
-				</div>
-				<div class="top-bar-right">
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="menu" id="menu">Menu<a class="docs-heading-icon" href="#menu"></a></h2>
+				<div class="docs-code-live">
 					<ul class="menu">
-						<li><input placeholder="Search" type="search"></li>
-						<li><button class="button" type="button">Search</button></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="reveal" id="reveal">Reveal<a class="docs-heading-icon" href="#reveal"></a></h2>
-		<div class="docs-code-live">
-			<p><a aria-controls="exampleModal1" aria-haspopup="true" data-open="exampleModal1" tabindex="0">Click me for a modal</a></p>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="slider" id="slider">Slider<a class="docs-heading-icon" href="#slider"></a></h2>
-		<div class="docs-code-live">
-			<div class="slider" data-end="200" data-initial-start="50" data-slider="112s4f-slider">
-				<span aria-controls="3o7dlg-slider" aria-orientation="horizontal" aria-valuemax="200" aria-valuemin="0" aria-valuenow="50" class="slider-handle" data-slider-handle="" role="slider" style="left: 24.34%;" tabindex="0"></span> <span class="slider-fill" data-slider-fill="" style="width: 25%;"></span> <input id="3o7dlg-slider" max="200" min="0" step="1" type="hidden" value="50">
-			</div>
-			<div class="slider vertical" data-end="200" data-initial-start="25" data-slider="aofxts-slider" data-vertical="true">
-				<span aria-controls="y3prl7-slider" aria-orientation="vertical" aria-valuemax="200" aria-valuemin="0" aria-valuenow="25" class="slider-handle" data-slider-handle="" role="slider" style="top: 11.54%;" tabindex="0"></span> <span class="slider-fill" data-slider-fill="" style="height: 13%;"></span> <input id="y3prl7-slider" max="200" min="0" step="1" type="hidden" value="25">
-			</div>
-			<div class="slider" data-initial-end="75" data-initial-start="25" data-slider="hfk4qc-slider">
-				<span aria-controls="79nyej-slider" aria-orientation="horizontal" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="slider-handle" data-slider-handle="" role="slider" style="left: 24.34%;" tabindex="0"></span> <span class="slider-fill" data-slider-fill="" style="width: 0px; min-width: 50.02%; left: 24.34%;"></span> <span aria-controls="ra93qq-slider" aria-orientation="horizontal" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="slider-handle" data-slider-handle="" role="slider" style="left: 73.02%;" tabindex="0"></span> <input id="79nyej-slider" max="100" min="0" step="1" type="hidden" value="25"> <input id="ra93qq-slider" max="100" min="0" step="1" type="hidden" value="75">
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="sticky" id="sticky">Sticky<a class="docs-heading-icon" href="#sticky"></a></h2>
-		<div class="docs-code-live">
-			<div class="row">
-				<div class="columns small-6" data-mutate="hcn8b3-sticky" data-something="" id="example1">
-					<p id="doodle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<div class="columns small-6 right sticky-container" data-sticky-container="" style="height: 202.828px;">
-					<div class="sticky is-anchored is-at-top" data-anchor="example1" data-events="mutate" data-margin-top="6" data-mutate="hcn8b3-sticky" data-resize="hcn8b3-sticky" data-sticky="eu1py3-sticky" style="max-width: 355.422px; margin-top: 0px; bottom: auto; top: 0px;"><img class="thumbnail" src="assets/img/generic/rectangle-3.jpg"></div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="switch" id="switch">Switch<a class="docs-heading-icon" href="#switch"></a></h2>
-		<div class="docs-code-live">
-			<div class="switch tiny">
-				<input class="switch-input" id="tinySwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="tinySwitch"><span class="show-for-sr">Tiny Sandwiches Enabled</span></label>
-			</div>
-			<div class="switch small">
-				<input class="switch-input" id="smallSwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="smallSwitch"><span class="show-for-sr">Small Portions Only</span></label>
-			</div>
-			<div class="switch large">
-				<input class="switch-input" id="largeSwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="largeSwitch"><span class="show-for-sr">Show Large Elephants</span></label>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="table" id="table">Table<a class="docs-heading-icon" href="#table"></a></h2>
-		<div class="docs-code-live">
-			<table>
-				<thead>
-					<tr>
-						<th width="200">Table Header</th>
-						<th>Table Header</th>
-						<th width="150">Table Header</th>
-						<th width="150">Table Header</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Content Goes Here</td>
-						<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-						<td>Content Goes Here</td>
-						<td>Content Goes Here</td>
-					</tr>
-					<tr>
-						<td>Content Goes Here</td>
-						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-						<td>Content Goes Here</td>
-						<td>Content Goes Here</td>
-					</tr>
-					<tr>
-						<td>Content Goes Here</td>
-						<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-						<td>Content Goes Here</td>
-						<td>Content Goes Here</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="tabs" id="tabs">Tabs<a class="docs-heading-icon" href="#tabs"></a></h2>
-		<div class="docs-code-live">
-			<ul class="tabs" data-tabs="xr3z81-tabs" id="example-tabs" role="tablist">
-				<li class="tabs-title is-active" role="presentation">
-					<a aria-controls="panel1" aria-selected="true" href="#panel1" id="panel1-label" role="tab" tabindex="0">Tab 1</a>
-				</li>
-				<li class="tabs-title" role="presentation">
-					<a aria-controls="panel2" aria-selected="false" href="#panel2" id="panel2-label" role="tab" tabindex="-1">Tab 2</a>
-				</li>
-				<li class="tabs-title" role="presentation">
-					<a aria-controls="panel3" aria-selected="false" href="#panel3" id="panel3-label" role="tab" tabindex="-1">Tab 3</a>
-				</li>
-				<li class="tabs-title" role="presentation">
-					<a aria-controls="panel4" aria-selected="false" href="#panel4" id="panel4-label" role="tab" tabindex="-1">Tab 4</a>
-				</li>
-				<li class="tabs-title" role="presentation">
-					<a aria-controls="panel5" aria-selected="false" href="#panel5" id="panel5-label" role="tab" tabindex="-1">Tab 5</a>
-				</li>
-				<li class="tabs-title" role="presentation">
-					<a aria-controls="panel6" aria-selected="false" href="#panel6" id="panel6-label" role="tab" tabindex="-1">Tab 6</a>
-				</li>
-			</ul>
-			<div class="tabs-content" data-tabs-content="example-tabs">
-				<div aria-labelledby="panel1-label" class="tabs-panel is-active" id="panel1" role="tabpanel">
-					<p>One</p>
-					<p>Check me out! I'm a super cool Tab panel with text content!</p>
-				</div>
-				<div aria-hidden="true" aria-labelledby="panel2-label" class="tabs-panel" id="panel2" role="tabpanel">
-				<p>Two</p><img class="thumbnail" src="assets/img/generic/rectangle-7.jpg"></div>
-				<div aria-hidden="true" aria-labelledby="panel3-label" class="tabs-panel" id="panel3" role="tabpanel">
-					<p>Three</p>
-					<p>Check me out! I'm a super cool Tab panel with text content!</p>
-				</div>
-				<div aria-hidden="true" aria-labelledby="panel4-label" class="tabs-panel" id="panel4" role="tabpanel">
-				<p>Four</p><img class="thumbnail" src="assets/img/generic/rectangle-2.jpg"></div>
-				<div aria-hidden="true" aria-labelledby="panel5-label" class="tabs-panel" id="panel5" role="tabpanel">
-					<p>Five</p>
-					<p>Check me out! I'm a super cool Tab panel with text content!</p>
-				</div>
-				<div aria-hidden="true" aria-labelledby="panel6-label" class="tabs-panel" id="panel6" role="tabpanel">
-				<p>Six</p><img class="thumbnail" src="assets/img/generic/rectangle-8.jpg"></div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="thumbnail" id="thumbnail">Thumbnail<a class="docs-heading-icon" href="#thumbnail"></a></h2>
-		<div class="docs-code-live">
-			<div class="row">
-				<div class="small-4 columns"><img alt="Photo of Uranus." class="thumbnail" src="assets/img/thumbnail/01.jpg"></div>
-				<div class="small-4 columns"><img alt="Photo of Neptune." class="thumbnail" src="assets/img/thumbnail/02.jpg"></div>
-				<div class="small-4 columns"><img alt="Photo of Pluto." class="thumbnail" src="assets/img/thumbnail/03.jpg"></div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="title-bar" id="title-bar">Title Bar<a class="docs-heading-icon" href="#title-bar"></a></h2>
-		<div class="docs-code-live">
-			<div class="title-bar">
-				<div class="title-bar-left">
-					<button class="menu-icon" type="button"></button> <span class="title-bar-title">Foundation</span>
-				</div>
-				<div class="title-bar-right">
-					<button class="menu-icon" type="button"></button>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="toggler" id="toggler">Toggler<a class="docs-heading-icon" href="#toggler"></a></h2>
-		<div class="docs-code-live">
-			<p><a aria-controls="menuBar" data-toggle="menuBar">Expand!</a></p>
-			<ul aria-expanded="true" class="menu" data-toggler=".expanded" id="menuBar">
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>One</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
-				</li>
-				<li>
-					<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
-				</li>
-			</ul>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="tooltip" id="tooltip">Tooltip<a class="docs-heading-icon" href="#tooltip"></a></h2>
-		<div class="docs-code-live">
-			<p>The <span aria-describedby="sbrsl2-tooltip" aria-haspopup="true" class="has-tip" data-disable-hover="false" data-events="resize" data-resize="sbrsl2-tooltip" data-toggle="sbrsl2-tooltip" data-tooltip="trangv-tooltip" data-yeti-box="sbrsl2-tooltip" tabindex="1" title="">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.</p>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="top-bar" id="top-bar">Top Bar<a class="docs-heading-icon" href="#top-bar"></a></h2>
-		<div class="docs-code-live">
-			<div class="top-bar">
-				<div class="top-bar-left">
-					<ul class="dropdown menu" data-dropdown-menu="z0n84u-dropdown-menu" role="menubar">
-						<li class="menu-text" role="menuitem">Site Title</li>
-						<li aria-haspopup="true" aria-label="One" class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem">
-							<a href="#0">One</a>
-							<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">One</a>
-								</li>
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Two</a>
-								</li>
-								<li class="is-submenu-item is-dropdown-submenu-item" role="menuitem">
-									<a href="#0">Three</a>
-								</li>
-							</ul>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>One</span></a>
 						</li>
-						<li role="menuitem">
-							<a href="#0">Two</a>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
 						</li>
-						<li role="menuitem">
-							<a href="#0">Three</a>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
 						</li>
 					</ul>
 				</div>
-				<div class="top-bar-right">
-					<ul class="menu">
-						<li><input placeholder="Search" type="search"></li>
-						<li><button class="button" type="button">Search</button></li>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="off-canvas" id="off-canvas">Off-canvas<a class="docs-heading-icon" href="#off-canvas"></a></h2>
+				<div class="docs-code-live">
+					<!-- Set up Off-canvas -->
+					<div class="off-canvas-wrapper">
+						<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+							<div aria-hidden="true" class="off-canvas position-left is-transition-push is-closed" data-off-canvas="smtfc2-off-canvas" id="offCanvasLeft">
+								<!-- left off-canvas markup -->
+							</div>
+							<div class="js-off-canvas-overlay is-overlay-fixed"></div>
+							<div aria-hidden="true" class="off-canvas position-right is-transition-push is-closed" data-off-canvas="8pkozb-off-canvas" data-position="right" id="offCanvasRight">
+								<!-- right off-canvas markup -->
+							</div>
+							<div class="js-off-canvas-overlay is-overlay-fixed"></div>
+							<div class="off-canvas-content" data-off-canvas-content="">
+								<!-- page content -->
+							</div>
+						</div>
+					</div>
+					<!-- Fire Off-canvas -->
+					<button aria-controls="offCanvasLeft" aria-expanded="false" class="button" data-toggle="offCanvasLeft" type="button">Open Menu</button>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="orbit" id="orbit">Orbit<a class="docs-heading-icon" href="#orbit"></a></h2>
+				<div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+  <ul class="orbit-container">
+    <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+    <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+    <li class="is-active orbit-slide">
+      <div class="docs-example-orbit-slide">
+        <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </li>
+    <li class="orbit-slide">
+      <div class="docs-example-orbit-slide">
+        <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </li>
+    <li class="orbit-slide">
+      <div class="docs-example-orbit-slide">
+        <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </li>
+    <li class="orbit-slide">
+      <div class="docs-example-orbit-slide">
+        <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </li>
+  </ul>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+  </nav>
+</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="pagination" id="pagination">Pagination<a class="docs-heading-icon" href="#pagination"></a></h2>
+				<div class="docs-code-live">
+					<ul aria-label="Pagination" class="pagination" role="navigation">
+						<li class="disabled">Previous <span class="show-for-sr">page</span></li>
+						<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+						<li>
+							<a aria-label="Page 2" href="#0">2</a>
+						</li>
+						<li>
+							<a aria-label="Page 3" href="#0">3</a>
+						</li>
+						<li>
+							<a aria-label="Page 4" href="#0">4</a>
+						</li>
+						<li aria-hidden="true" class="ellipsis"></li>
+						<li>
+							<a aria-label="Page 12" href="#0">12</a>
+						</li>
+						<li>
+							<a aria-label="Page 13" href="#0">13</a>
+						</li>
+						<li>
+							<a aria-label="Next page" href="#0">Next <span class="show-for-sr">page</span></a>
+						</li>
 					</ul>
 				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="progress-bar" id="progress-bar">Progress Bar<a class="docs-heading-icon" href="#progress-bar"></a></h2>
+				<div class="docs-code-live">
+					<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-valuetext="25 percent" class="primary progress" role="progressbar" tabindex="0">
+						<div class="progress-meter" style="width: 25%">
+							<p class="progress-meter-text">25%</p>
+						</div>
+					</div>
+					<div class="warning progress">
+						<div class="progress-meter" style="width: 50%">
+							<p class="progress-meter-text">50%</p>
+						</div>
+					</div>
+					<div class="alert progress">
+						<div class="progress-meter" style="width: 75%">
+							<p class="progress-meter-text">75%</p>
+						</div>
+					</div>
+					<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100 percent" class="success progress" role="progressbar" tabindex="0">
+						<div class="progress-meter" style="width: 100%">
+							<p class="progress-meter-text">100%</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="responsive-menu" id="responsive-menu">Responsive Menu<a class="docs-heading-icon" href="#responsive-menu"></a></h2>
+				<div class="docs-code-live">
+					<ul class="vertical medium-horizontal menu">
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>One</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="responsive-toggle" id="responsive-toggle">Responsive Toggle<a class="docs-heading-icon" href="#responsive-toggle"></a></h2>
+				<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+					<button class="menu-icon" type="button" data-toggle></button>
+					<div class="title-bar-title">Menu</div>
+				</div>
+
+				<div class="top-bar" id="example-menu">
+					<div class="top-bar-left">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li class="menu-text">Site Title</li>
+							<li class="has-submenu">
+								<a href="#0">One</a>
+								<ul class="submenu menu vertical" data-submenu>
+									<li><a href="#0">One</a></li>
+									<li><a href="#0">Two</a></li>
+									<li><a href="#0">Three</a></li>
+								</ul>
+							</li>
+							<li><a href="#0">Two</a></li>
+							<li><a href="#0">Three</a></li>
+						</ul>
+					</div>
+					<div class="top-bar-right">
+						<ul class="menu">
+							<li><input type="search" placeholder="Search"></li>
+							<li><button type="button" class="button">Search</button></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="reveal" id="reveal">Reveal<a class="docs-heading-icon" href="#reveal"></a></h2>
+				<div class="docs-code-live">
+					<p><a aria-controls="exampleModal1" aria-haspopup="true" data-open="exampleModal1" tabindex="0">Click me for a modal</a></p>
+				</div>
+				<div class="reveal" id="exampleModal1" data-reveal>
+					<h1>Awesome. I Have It.</h1>
+					<p class="lead">Your couch. It is mine.</p>
+					<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+					<button class="close-button" data-close aria-label="Close reveal" type="button">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="slider" id="slider">Slider<a class="docs-heading-icon" href="#slider"></a></h2>
+				<div class="docs-code-live">
+					<div class="slider" data-end="200" data-initial-start="50" data-slider="112s4f-slider">
+						<span aria-controls="3o7dlg-slider" aria-orientation="horizontal" aria-valuemax="200" aria-valuemin="0" aria-valuenow="50" class="slider-handle" data-slider-handle="" role="slider" style="left: 24.34%;" tabindex="0"></span> <span class="slider-fill"
+						    data-slider-fill="" style="width: 25%;"></span> <input id="3o7dlg-slider" max="200" min="0" step="1" type="hidden" value="50">
+					</div>
+					<div class="slider vertical" data-end="200" data-initial-start="25" data-slider="aofxts-slider" data-vertical="true">
+						<span aria-controls="y3prl7-slider" aria-orientation="vertical" aria-valuemax="200" aria-valuemin="0" aria-valuenow="25" class="slider-handle" data-slider-handle="" role="slider" style="top: 11.54%;" tabindex="0"></span> <span class="slider-fill"
+						    data-slider-fill="" style="height: 13%;"></span> <input id="y3prl7-slider" max="200" min="0" step="1" type="hidden" value="25">
+					</div>
+					<div class="slider" data-initial-end="75" data-initial-start="25" data-slider="hfk4qc-slider">
+						<span aria-controls="79nyej-slider" aria-orientation="horizontal" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="slider-handle" data-slider-handle="" role="slider" style="left: 24.34%;" tabindex="0"></span> <span class="slider-fill"
+						    data-slider-fill="" style="width: 0px; min-width: 50.02%; left: 24.34%;"></span> <span aria-controls="ra93qq-slider" aria-orientation="horizontal" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="slider-handle" data-slider-handle=""
+						    role="slider" style="left: 73.02%;" tabindex="0"></span> <input id="79nyej-slider" max="100" min="0" step="1" type="hidden" value="25"> <input id="ra93qq-slider" max="100" min="0" step="1" type="hidden" value="75">
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="sticky" id="sticky">Sticky<a class="docs-heading-icon" href="#sticky"></a></h2>
+				<div class="docs-code-live">
+					<div class="row">
+						<div class="columns small-6" data-mutate="hcn8b3-sticky" data-something="" id="example1">
+							<p id="doodle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="columns small-6 right sticky-container" data-sticky-container="" style="height: 202.828px;">
+							<div class="sticky is-anchored is-at-top" data-anchor="example1" data-events="mutate" data-margin-top="6" data-mutate="hcn8b3-sticky" data-resize="hcn8b3-sticky" data-sticky="eu1py3-sticky" style="max-width: 355.422px; margin-top: 0px; bottom: auto; top: 0px;"><img class="thumbnail" src="assets/img/generic/rectangle-3.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="switch" id="switch">Switch<a class="docs-heading-icon" href="#switch"></a></h2>
+				<div class="docs-code-live">
+					<div class="switch tiny">
+						<input class="switch-input" id="tinySwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="tinySwitch"><span class="show-for-sr">Tiny Sandwiches Enabled</span></label>
+					</div>
+					<div class="switch small">
+						<input class="switch-input" id="smallSwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="smallSwitch"><span class="show-for-sr">Small Portions Only</span></label>
+					</div>
+					<div class="switch large">
+						<input class="switch-input" id="largeSwitch" name="exampleSwitch" type="checkbox"> <label class="switch-paddle" for="largeSwitch"><span class="show-for-sr">Show Large Elephants</span></label>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="table" id="table">Table<a class="docs-heading-icon" href="#table"></a></h2>
+				<div class="docs-code-live">
+					<table>
+						<thead>
+							<tr>
+								<th width="200">Table Header</th>
+								<th>Table Header</th>
+								<th width="150">Table Header</th>
+								<th width="150">Table Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="tabs" id="tabs">Tabs<a class="docs-heading-icon" href="#tabs"></a></h2>
+				<div class="docs-code-live">
+					<ul class="tabs" data-tabs="xr3z81-tabs" id="example-tabs" role="tablist">
+						<li class="tabs-title is-active" role="presentation">
+							<a aria-controls="panel1" aria-selected="true" href="#panel1" id="panel1-label" role="tab" tabindex="0">Tab 1</a>
+						</li>
+						<li class="tabs-title" role="presentation">
+							<a aria-controls="panel2" aria-selected="false" href="#panel2" id="panel2-label" role="tab" tabindex="-1">Tab 2</a>
+						</li>
+						<li class="tabs-title" role="presentation">
+							<a aria-controls="panel3" aria-selected="false" href="#panel3" id="panel3-label" role="tab" tabindex="-1">Tab 3</a>
+						</li>
+						<li class="tabs-title" role="presentation">
+							<a aria-controls="panel4" aria-selected="false" href="#panel4" id="panel4-label" role="tab" tabindex="-1">Tab 4</a>
+						</li>
+						<li class="tabs-title" role="presentation">
+							<a aria-controls="panel5" aria-selected="false" href="#panel5" id="panel5-label" role="tab" tabindex="-1">Tab 5</a>
+						</li>
+						<li class="tabs-title" role="presentation">
+							<a aria-controls="panel6" aria-selected="false" href="#panel6" id="panel6-label" role="tab" tabindex="-1">Tab 6</a>
+						</li>
+					</ul>
+					<div class="tabs-content" data-tabs-content="example-tabs">
+						<div aria-labelledby="panel1-label" class="tabs-panel is-active" id="panel1" role="tabpanel">
+							<p>One</p>
+							<p>Check me out! I'm a super cool Tab panel with text content!</p>
+						</div>
+						<div aria-hidden="true" aria-labelledby="panel2-label" class="tabs-panel" id="panel2" role="tabpanel">
+							<p>Two</p><img class="thumbnail" src="assets/img/generic/rectangle-7.jpg"></div>
+						<div aria-hidden="true" aria-labelledby="panel3-label" class="tabs-panel" id="panel3" role="tabpanel">
+							<p>Three</p>
+							<p>Check me out! I'm a super cool Tab panel with text content!</p>
+						</div>
+						<div aria-hidden="true" aria-labelledby="panel4-label" class="tabs-panel" id="panel4" role="tabpanel">
+							<p>Four</p><img class="thumbnail" src="assets/img/generic/rectangle-2.jpg"></div>
+						<div aria-hidden="true" aria-labelledby="panel5-label" class="tabs-panel" id="panel5" role="tabpanel">
+							<p>Five</p>
+							<p>Check me out! I'm a super cool Tab panel with text content!</p>
+						</div>
+						<div aria-hidden="true" aria-labelledby="panel6-label" class="tabs-panel" id="panel6" role="tabpanel">
+							<p>Six</p><img class="thumbnail" src="assets/img/generic/rectangle-8.jpg"></div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="thumbnail" id="thumbnail">Thumbnail<a class="docs-heading-icon" href="#thumbnail"></a></h2>
+				<div class="docs-code-live">
+					<div class="row">
+						<div class="small-4 columns"><img alt="Photo of Uranus." class="thumbnail" src="assets/img/thumbnail/01.jpg"></div>
+						<div class="small-4 columns"><img alt="Photo of Neptune." class="thumbnail" src="assets/img/thumbnail/02.jpg"></div>
+						<div class="small-4 columns"><img alt="Photo of Pluto." class="thumbnail" src="assets/img/thumbnail/03.jpg"></div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="title-bar" id="title-bar">Title Bar<a class="docs-heading-icon" href="#title-bar"></a></h2>
+				<div class="docs-code-live">
+					<div class="title-bar">
+						<div class="title-bar-left">
+							<button class="menu-icon" type="button"></button> <span class="title-bar-title">Foundation</span>
+						</div>
+						<div class="title-bar-right">
+							<button class="menu-icon" type="button"></button>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="toggler" id="toggler">Toggler<a class="docs-heading-icon" href="#toggler"></a></h2>
+				<div class="docs-code-live">
+					<p><a aria-controls="menuBar" data-toggle="menuBar">Expand!</a></p>
+					<ul aria-expanded="true" class="menu" data-toggler=".expanded" id="menuBar">
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>One</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Two</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Three</span></a>
+						</li>
+						<li>
+							<a href="#0"><i class="fi-list"></i> <span>Four</span></a>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="tooltip" id="tooltip">Tooltip<a class="docs-heading-icon" href="#tooltip"></a></h2>
+				<div class="docs-code-live">
+					<p>The <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand
+						immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.</p>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="top-bar" id="top-bar">Top Bar<a class="docs-heading-icon" href="#top-bar"></a></h2>
+				<div class="top-bar">
+					<div class="top-bar-left">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li class="menu-text">Site Title</li>
+							<li class="has-submenu">
+								<a href="#0">One</a>
+								<ul class="submenu menu vertical" data-submenu>
+									<li><a href="#0">One</a></li>
+									<li><a href="#0">Two</a></li>
+									<li><a href="#0">Three</a></li>
+								</ul>
+							</li>
+							<li><a href="#0">Two</a></li>
+							<li><a href="#0">Three</a></li>
+						</ul>
+					</div>
+					<div class="top-bar-right">
+						<ul class="menu">
+							<li><input type="search" placeholder="Search"></li>
+							<li><button type="button" class="button">Search</button></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<h2 class="docs-heading" data-magellan-target="visibility-classes" id="visibility-classes">Visibility Classes<a class="docs-heading-icon" href="#visibility-classes"></a></h2>
+				<div class="docs-code-live">
+					<p>You are on a small screen or larger.</p>
+					<p class="show-for-medium">You are on a medium screen or larger.</p>
+					<p class="show-for-large">You are on a large screen or larger.</p>
+					<p class="show-for-small-only">You are <em>definitely</em> on a small screen.</p>
+					<p class="show-for-medium-only">You are <em>definitely</em> on a medium screen.</p>
+					<p class="show-for-large-only">You are <em>definitely</em> on a large screen.</p>
+					<p class="hide-for-medium">You are <em>not</em> on a medium screen or larger.</p>
+					<p class="hide-for-large">You are <em>not</em> on a large screen or larger.</p>
+					<p class="hide-for-small-only">You are <em>definitely not</em> on a small screen.</p>
+					<p class="hide-for-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+					<p class="hide-for-large-only">You are <em>definitely not</em> on a large screen.</p>
+					<p class="hide">Can't touch this.</p>
+					<p class="invisible">Can sort of touch this.</p>
+					<p class="show-for-landscape">You are in landscape orientation.</p>
+					<p class="show-for-portrait">You are in portrait orientation.</p>
+					<p class="show-for-sr">This text can only be read by a screen reader.</p>
+					<p>There's a line of text above this one, you just can't see it.</p>
+					<p aria-hidden="true">This text can be seen, but won't be read by a screen reader.</p>
+					<p><a class="show-on-focus" href="#mainContent">Skip to Content</a></p>
+				</div>
 			</div>
-		</div>
-		<hr>
-		<h2 class="docs-heading" data-magellan-target="visibility-classes" id="visibility-classes">Visibility Classes<a class="docs-heading-icon" href="#visibility-classes"></a></h2>
-		<div class="docs-code-live">
-			<p>You are on a small screen or larger.</p>
-			<p class="show-for-medium">You are on a medium screen or larger.</p>
-			<p class="show-for-large">You are on a large screen or larger.</p>
-			<p class="show-for-small-only">You are <em>definitely</em> on a small screen.</p>
-			<p class="show-for-medium-only">You are <em>definitely</em> on a medium screen.</p>
-			<p class="show-for-large-only">You are <em>definitely</em> on a large screen.</p>
-			<p class="hide-for-medium">You are <em>not</em> on a medium screen or larger.</p>
-			<p class="hide-for-large">You are <em>not</em> on a large screen or larger.</p>
-			<p class="hide-for-small-only">You are <em>definitely not</em> on a small screen.</p>
-			<p class="hide-for-medium-only">You are <em>definitely not</em> on a medium screen.</p>
-			<p class="hide-for-large-only">You are <em>definitely not</em> on a large screen.</p>
-			<p class="hide">Can't touch this.</p>
-			<p class="invisible">Can sort of touch this.</p>
-			<p class="show-for-landscape">You are in landscape orientation.</p>
-			<p class="show-for-portrait">You are in portrait orientation.</p>
-			<p class="show-for-sr">This text can only be read by a screen reader.</p>
-			<p>There's a line of text above this one, you just can't see it.</p>
-			<p aria-hidden="true">This text can be seen, but won't be read by a screen reader.</p>
-			<p><a class="show-on-focus" href="#mainContent">Skip to Content</a></p>
-		</div>
 	</article>
 </body>
+
 </html>

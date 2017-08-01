@@ -1,6 +1,4 @@
-import css from "../../styles/test.scss";
-
-
+import css from "../../styles/styles.scss";
 
 const dummy = () => {
     console.log('I am dummy!', )
