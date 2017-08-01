@@ -1,5 +1,7 @@
-
+//Load default foundation from the npm package
 @import 'foundation-sites/scss/foundation';
+
+//Load our custom overwrites of foundation settings
 @import 'foundation-settings';
 
 // ZURB utility to assist in animating things. It is used for foundation things like Toggler, Reveal and Orbit
@@ -8,9 +10,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//This will include all modules in foundation with no way of turning off certain things
 //@include foundation-everything;
 
-
+/**
+* Pick and chose modules below, note, some of these require to be loaded in this way, so do not change the order of the include statements
+*/
 @include foundation-global-styles;
 
 //@include foundation-grid;
