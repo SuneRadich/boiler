@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 /**
  * Env
@@ -45,11 +46,25 @@ config.output = TEST
 
 config.module = {
 	rules: [
+		{
+			test: /\.css$/,
+			use: [
+				'style-loader',
+				'css-loader'
+			]
+		},
+
+		{
+			test: /\.(ico|png|svg|jpg|gif)$/,
+			use: [
+				'file-loader'
+			]
+		},
 
 		{
 			test: /\.js$/,
 			loader: 'babel-loader',
-			//Exclude the contents of node_modules except foundation-sites
+			//Exclude the contents of node_modules except foundation-sites/js/entries
 			exclude: /node_modules(?!\/foundation-sites\/js\/entries\/)/
 		},
 
@@ -81,7 +96,19 @@ if (!TEST) {
 			template: './public/index.html',
 			inject: 'body'
 		}),
-    	new ExtractTextPlugin("css/styles.css")
+    	new ExtractTextPlugin("css/styles.css"),
+		new CopyWebpackPlugin([
+			{
+				//Make sure the default facicon is availble when building for production
+				from: __dirname + '/public/favicon.ico'
+			},
+			{
+				//Handle all images when building for production
+				from: __dirname + '/public/images',
+				to: 'images/'
+			}
+
+		])
 	);
 }
 
@@ -98,10 +125,12 @@ if (TEST) {
 	config.devtool = 'eval';
 }
 
-config.devServer = {
-	contentBase: path.join(__dirname, 'public'),
-	compress: true,
-	port: 1508
+if (!PROD) {
+	config.devServer = {
+		contentBase: path.join(__dirname, 'public'),
+		compress: true,
+		port: 1508
+	}
 }
 
 module.exports = config;
