@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 /**
  * Env
@@ -100,9 +101,16 @@ config.module = {
 if (!TEST) {
 	config.plugins.push(
 
+		new CleanWebpackPlugin(['dist']),
+
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
 			inject: 'body'
+		}),
+
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'js/vendor.js',
+			children: true
 		}),
 
 		new ExtractTextPlugin("css/styles.css"),
@@ -158,6 +166,27 @@ if (!PROD || !TEST) {
 		    warnings: false,
 		    publicPath: false
 		}
+	}
+}
+
+if (PROD) {
+	config.stats = {
+		colors: true,
+		//Output bundle hash
+		hash: false,
+		//Output webpack version
+		version: false,
+		timings: false,
+		assets: true,
+		chunks: false,
+		modules: false,
+		reasons: false,
+		children: false,
+		source: false,
+		errors: true,
+		errorDetails: false,
+		warnings: false,
+		publicPath: false
 	}
 }
 
