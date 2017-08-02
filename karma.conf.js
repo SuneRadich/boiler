@@ -8,8 +8,7 @@ module.exports = function(config) {
 	config.set({
 
 		// base path that will be used to resolve all patterns (eg. files, exclude)
-		//basePath: '',
-
+		basePath: '',
 
 		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
@@ -65,7 +64,9 @@ module.exports = function(config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: process.env.npm_package_scripts_test ? ['PhantomJS'] : ['Chrome'],
+		// Listen for npm_lifecycle_event, if it exists, we assume karma was intiailized through `npm test` otherwise, assume it was started directly with `karma start`
+		// When running in Chrome (or any other real browser, we can open up a debug view and developer console to inspect more about the running/failing tests)
+		browsers: process.env.npm_lifecycle_event ? ['PhantomJS'] : ['Chrome'],
 
 
 		// Continuous Integration mode

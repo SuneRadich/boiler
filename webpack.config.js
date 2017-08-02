@@ -18,6 +18,10 @@ const config = {
 	plugins: []
 };
 
+/**
+* Resolve
+* Reference: https://webpack.js.org/configuration/resolve/
+*/
 config.resolve = {
 	alias: {
 		//Makes relative paths in the foundation setup easier to manage
@@ -27,7 +31,7 @@ config.resolve = {
 
 /**
  * Entry
- * Reference: http://webpack.github.io/docs/configuration.html#entry
+ * Reference: https://webpack.js.org/configuration/entry-context/#entry
  */
 config.entry = TEST ?
 	void 0 :
@@ -38,7 +42,10 @@ config.entry = TEST ?
 	};
 
 
-
+/**
+ * Output
+ * Reference: https://webpack.js.org/configuration/output/
+ */
 config.output = TEST ?
 	{} :
 	{
@@ -47,6 +54,10 @@ config.output = TEST ?
 	};
 
 
+/**
+ * Module
+ * Reference: https://webpack.js.org/configuration/module/
+ */
 config.module = {
 	rules: [
 
@@ -98,6 +109,10 @@ config.module = {
 	]
 }
 
+/**
+* Plugins
+* Reference: https://webpack.js.org/configuration/plugins/
+*/
 if (!TEST) {
 	config.plugins.push(
 
@@ -131,7 +146,7 @@ if (!TEST) {
 
 /**
  * Devtool
- * Reference: http://webpack.github.io/docs/configuration.html#devtool
+ * Reference: https://webpack.js.org/configuration/devtool/
  * Type of sourcemap to use per build type
  */
 if (TEST) {
@@ -142,11 +157,18 @@ if (TEST) {
 	config.devtool = 'eval';
 }
 
+/**
+* Development server
+* Reference: https://webpack.js.org/configuration/dev-server/
+*/
 if (!PROD || !TEST) {
 	config.devServer = {
 		contentBase: path.join(__dirname, 'public'),
 		compress: true,
 		port: 1508,
+		overlay: true,
+		open: true,
+		openPage: '.',
 		//Turn off most output details when running webpack
 		stats: {
 			colors: true,
@@ -169,25 +191,11 @@ if (!PROD || !TEST) {
 	}
 }
 
-if (PROD) {
-	config.stats = {
-		colors: true,
-		//Output bundle hash
-		hash: false,
-		//Output webpack version
-		version: false,
-		timings: false,
-		assets: true,
-		chunks: false,
-		modules: false,
-		reasons: false,
-		children: false,
-		source: false,
-		errors: true,
-		errorDetails: false,
-		warnings: false,
-		publicPath: false
-	}
-}
+/**
+* Stats
+* Reference: https://webpack.js.org/configuration/stats/
+*/
+config.stats = 'errors-only';
+
 
 module.exports = config;
