@@ -96,6 +96,8 @@ $global-prototype-breakpoints: false;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
+
+@include add-foundation-colors;
 // 2. Breakpoints
 // --------------
 

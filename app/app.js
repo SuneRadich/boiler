@@ -3,11 +3,12 @@ import angular from 'angular';
 import $ from 'jquery'
 
 //Import foundation styling
-import '../styles/foundation.scss';
-import '../styles/styles.scss';
+//import 'styles/foundation.scss';
 
-//Import foundation javascript logic
-import "./foundation";
+import './app.scss';
+
+//Import foundation javascript and scss
+import "vendor/foundation/foundation";
 
 import controller from './app.controller';
 import Calc from './services/calculate.service';
