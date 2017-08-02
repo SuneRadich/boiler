@@ -3,6 +3,7 @@ function Calc() {
 	let methods = {};
 
 	methods.add = function(x, y){
+		console.log('I am called!', arguments)
 		return x + y;
 	}
 

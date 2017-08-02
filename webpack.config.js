@@ -25,10 +25,12 @@ config.resolve = {
 };
 
 /**
-* Entry
-* Reference: http://webpack.github.io/docs/configuration.html#entry
-*/
-config.entry = {
+ * Entry
+ * Reference: http://webpack.github.io/docs/configuration.html#entry
+ */
+config.entry = TEST ?
+	void 0 :
+	{
 		app: [
 			'./app/app.js',
 		]
@@ -36,9 +38,9 @@ config.entry = {
 
 
 
-config.output = TEST
-	? {}
-	: {
+config.output = TEST ?
+	{} :
+	{
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'app.bundle.js'
 	};
@@ -46,12 +48,24 @@ config.output = TEST
 
 config.module = {
 	rules: [
+
+		{
+			test: /\.js$/,
+			loader: 'babel-loader',
+			//Exclude the contents of node_modules except foundation-sites/js/entries
+			exclude: /node_modules(?!\/foundation-sites\/js\/entries\/)/
+		},
+
 		{
 			test: /\.css$/,
-			use: [
-				'style-loader',
-				'css-loader'
-			]
+			loader: TEST
+				? 'null-loader'
+				: ExtractTextPlugin.extract({
+					use: [
+						{loader: 'css-loader', query: {sourceMap: true}}
+					],
+					fallback: 'style-loader'
+				})
 		},
 
 		{
@@ -62,17 +76,10 @@ config.module = {
 		},
 
 		{
-			test: /\.js$/,
-			loader: 'babel-loader',
-			//Exclude the contents of node_modules except foundation-sites/js/entries
-			exclude: /node_modules(?!\/foundation-sites\/js\/entries\/)/
-		},
-
-		{
 			test: /\.scss$/,
-			loader: TEST
-				? 'null-loader'
-				: ExtractTextPlugin.extract({
+			loader: TEST ?
+				'null-loader' :
+				ExtractTextPlugin.extract({
 					use: [{
 						loader: "css-loader", // translates CSS into CommonJS
 						query: {
@@ -92,13 +99,15 @@ config.module = {
 
 if (!TEST) {
 	config.plugins.push(
+
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
 			inject: 'body'
 		}),
-    	new ExtractTextPlugin("css/styles.css"),
-		new CopyWebpackPlugin([
-			{
+
+		new ExtractTextPlugin("css/styles.css"),
+
+		new CopyWebpackPlugin([{
 				//Make sure the default facicon is availble when building for production
 				from: __dirname + '/public/favicon.ico'
 			},
@@ -125,7 +134,7 @@ if (TEST) {
 	config.devtool = 'eval';
 }
 
-if (!PROD) {
+if (!PROD || !TEST) {
 	config.devServer = {
 		contentBase: path.join(__dirname, 'public'),
 		compress: true,
