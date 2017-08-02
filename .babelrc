@@ -1,7 +1,10 @@
 {
     "presets": ["es2015"],
     "plugins": [
-        ["module-resolver", {
+
+		["angularjs-annotate", { "explicitOnly" : true}],
+
+		["module-resolver", {
             "root": [
                 "."
             ],
