@@ -52,8 +52,8 @@ config.module = {
 		{
 			test: /\.js$/,
 			loader: 'babel-loader',
-			//Exclude the contents of node_modules except foundation-sites/js/entries
-			exclude: /node_modules(?!\/foundation-sites\/js\/entries\/)/
+			//Exclude the contents of node_modules except foundation-sites
+			exclude: /node_modules(?!\/foundation-sites\/)/
 		},
 
 		{
