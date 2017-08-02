@@ -138,7 +138,26 @@ if (!PROD || !TEST) {
 	config.devServer = {
 		contentBase: path.join(__dirname, 'public'),
 		compress: true,
-		port: 1508
+		port: 1508,
+		//Turn off most output details when running webpack
+		stats: {
+			colors: true,
+			//Output bundle hash
+		    hash: false,
+			//Output webpack version
+		    version: false,
+		    timings: false,
+		    assets: true,
+		    chunks: false,
+		    modules: false,
+		    reasons: false,
+		    children: false,
+		    source: false,
+		    errors: true,
+		    errorDetails: false,
+		    warnings: false,
+		    publicPath: false
+		}
 	}
 }
 
