@@ -20,6 +20,7 @@
     "dependencies": {
         "angular": "^1.6.5",
         "angular-mocks": "^1.6.5",
+        "autoprefixer": "^7.1.2",
         "babel-core": "^6.25.0",
         "babel-loader": "^7.1.1",
         "babel-plugin-angularjs-annotate": "^0.8.0",
@@ -40,6 +41,7 @@
         "motion-ui": "^1.2.3",
         "node-sass": "^4.5.3",
         "null-loader": "^0.1.1",
+        "postcss-loader": "^2.0.6",
         "sass-loader": "^6.0.6",
         "script-loader": "^0.7.0",
         "style-loader": "^0.18.2",

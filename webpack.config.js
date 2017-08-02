@@ -50,7 +50,7 @@ config.output = TEST ?
 	{} :
 	{
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/app.bundle.js'
+		filename: 'js/[name].bundle.js'
 	};
 
 
@@ -74,7 +74,8 @@ config.module = {
 				? 'null-loader'
 				: ExtractTextPlugin.extract({
 					use: [
-						{loader: 'css-loader', query: {sourceMap: true}}
+						{ loader: 'css-loader', query: { minimize: true, sourceMap: true } },
+						'postcss-loader'
 					],
 					fallback: 'style-loader'
 				})
@@ -95,14 +96,22 @@ config.module = {
 					use: [{
 						loader: "css-loader", // translates CSS into CommonJS
 						query: {
-							sourceMap: true
+							sourceMap: true,
+							minimize: true
 						}
-					}, {
+					},
+
+					'postcss-loader',
+
+					{
 						loader: "sass-loader", // compiles Sass to CSS
 						options: {
 							includePaths: [path.resolve(__dirname, "node_modules")]
 						}
-					}],
+					},
+
+					],
+
 					fallback: 'style-loader'
 				})
 		}
@@ -122,6 +131,8 @@ if (!TEST) {
 			template: './public/index.html',
 			inject: 'body'
 		}),
+
+		new webpack.optimize.UglifyJsPlugin({ minimize: true }),
 
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'js/vendor.js',
