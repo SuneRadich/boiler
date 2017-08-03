@@ -1,3 +1,7 @@
+/**
+* This is the configuration file for unit tests
+*/
+
 const webpackConfig = require('./webpack.test');
 
 // Karma configuration

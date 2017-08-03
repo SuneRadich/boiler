@@ -1,3 +1,6 @@
+/**
+* This is the common post css config used
+*/
 module.exports = {
     plugins: {
         'autoprefixer': {

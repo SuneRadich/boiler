@@ -1,3 +1,7 @@
+/**
+* This file controls the configuration of the modernizr setup used in the solution
+*/
+
 'use strict';
 
 //@see https://github.com/itgalaxy/webpack-modernizr-loader and @see https://modernizr.com/download?setclasses
