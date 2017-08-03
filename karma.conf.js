@@ -71,7 +71,8 @@ module.exports = function(config) {
 
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits
-		singleRun: false,
+        // Detect if we are running as part of npm test, and if so, only run once. If on the other hand we run normally (karma start), start continuous watch
+		singleRun: process.env.npm_lifecycle_event ? true : false,
 
 		// Concurrency level
 		// how many browser should be started simultaneous
