@@ -55,12 +55,17 @@ const config = {
                 loader: ExtractTextPlugin.extract({
                     use: [{
                             loader: 'css-loader',
-                            query: {
-                                minimize: true,
+                            options: {
                                 sourceMap: true
                             }
                         },
-                        'postcss-loader'
+
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
+                            }
+                        },
                     ],
                     fallback: 'style-loader'
                 })
@@ -75,19 +80,25 @@ const config = {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract({
                     use: [{
-                            loader: "css-loader", // translates CSS into CommonJS
-                            query: {
+                            loader: 'css-loader', // translates CSS into CommonJS
+                            options: {
                                 sourceMap: true,
-                                minimize: true
                             }
                         },
 
-                        'postcss-loader',
+                        {
+                            //also see ./postcss.config.js
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
+                            }
+                        },
 
                         {
-                            loader: "sass-loader", // compiles Sass to CSS
+                            loader: 'sass-loader', // compiles Sass to CSS
                             options: {
-                                includePaths: [path.resolve(__dirname, "node_modules")]
+                                sourceMap: true,
+                                includePaths: [path.resolve(__dirname, 'node_modules')]
                             }
                         },
 
@@ -110,7 +121,7 @@ const config = {
      * Stats
      * Reference: https://webpack.js.org/configuration/stats/
      */
-    stats: 'errors-only'
+    //stats: 'errors-only'
 
 };
 

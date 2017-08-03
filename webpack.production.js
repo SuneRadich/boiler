@@ -7,22 +7,25 @@ const CommonConfig = require('./webpack.common.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
+//Merge common config with production specific settings
 module.exports = Merge(CommonConfig, {
 
     devtool:'source-map',
 
     plugins: [
+
         new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false
         }),
+
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
+
         new webpack.optimize.UglifyJsPlugin({
-            //minimize: true,
             beautify: false,
             mangle: {
                 screw_ie8: true,
@@ -31,6 +34,7 @@ module.exports = Merge(CommonConfig, {
             compress: {
                 screw_ie8: true
             },
+            sourceMap: true,
             comments: false
         }),
 
