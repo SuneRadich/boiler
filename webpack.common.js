@@ -21,7 +21,7 @@ const config = {
      */
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].bundle.js'
+        filename: 'js/[name].bundle.[hash].js'
     },
 
     /**

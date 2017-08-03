@@ -24,7 +24,7 @@ module.exports = Merge(CommonConfig, {
             children: true
         }),
 
-        new ExtractTextPlugin("css/styles.css"),
+        new ExtractTextPlugin("css/styles.[hash].css"),
     ],
 
     /**
