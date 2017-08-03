@@ -1,4 +1,4 @@
-function Calc() {
+function Calculator() {
 
 	let methods = {};
 
@@ -12,6 +12,12 @@ function Calc() {
 
 	return methods;
 
-}
+};
 
-export default Calc;
+function foo() {
+    console.log('MEFFE: I am never used!')
+};
+
+export const Foo = foo;
+
+export const Calc = Calculator;

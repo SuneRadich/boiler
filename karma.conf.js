@@ -1,4 +1,4 @@
-const webpackConfig = require('./webpack.config');
+const webpackConfig = require('./webpack.test');
 
 // Karma configuration
 // Generated on Wed Aug 02 2017 08:39:20 GMT+0200 (CEST)

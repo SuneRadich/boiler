@@ -4,8 +4,8 @@
     "description": "Boilerplate for 1508 setup",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server",
-        "build": "webpack",
+        "dev": "webpack-dev-server --config ./webpack.development.js",
+        "build": "webpack --config ./webpack.production.js",
         "test": "karma start"
     },
     "repository": {
@@ -47,6 +47,7 @@
         "style-loader": "^0.18.2",
         "webpack": "^3.4.1",
         "webpack-dev-server": "^2.6.1",
+        "webpack-merge": "^4.1.0",
         "webpack-modernizr-loader": "^3.0.1"
     },
     "devDependencies": {

@@ -1,11 +1,6 @@
-import angular from 'angular';
-
-import $ from 'jquery';
-
 import modernizr from 'modernizr';
-
-//Import foundation styling
-//import 'styles/foundation.scss';
+import angular from 'angular';
+import $ from 'jquery';
 
 import './app.scss';
 
@@ -13,7 +8,7 @@ import './app.scss';
 import "vendor/foundation/foundation";
 
 import controller from './app.controller';
-import Calc from './services/calculate.service';
+import { Calc } from './services/calculate.service';
 
 var app = angular.module('app', []);
 
