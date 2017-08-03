@@ -121,7 +121,7 @@ const config = {
      * Stats
      * Reference: https://webpack.js.org/configuration/stats/
      */
-    //stats: 'errors-only'
+    stats: 'errors-only'
 
 };
 
