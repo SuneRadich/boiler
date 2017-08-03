@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "webpack-dev-server --config ./webpack.development.js",
         "build": "webpack --config ./webpack.production.js",
+        "profile": "webpack --profile --config ./webpack.production.js --json > stats.json",
         "test": "karma start"
     },
     "repository": {
