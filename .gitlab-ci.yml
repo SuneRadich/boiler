@@ -1,6 +1,3 @@
-# Official framework image. Look for the different tagged releases at:
-# https://hub.docker.com/r/library/node/tags/
-image: node:6
 
 before_script:
   - npm install
@@ -11,8 +8,14 @@ before_script:
 #   paths:
 #     - node_modules/
 
-test:node:6:
-  image: node:6
-  script:
-    - npm run build
-    - npm test
+
+before_script:
+    - whoami
+    - git config --global core.autocrlf input
+    - git config core.filemode false
+#    - npm install grunt-cli
+    - npm install
+
+runtest:
+    script:
+        - npm test
