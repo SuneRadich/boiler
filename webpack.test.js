@@ -1,4 +1,6 @@
-const webpack = require('webpack');
+/**
+* This file contains the webpack config used for when running unit tests
+*/
 const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
 

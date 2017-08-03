@@ -1,3 +1,7 @@
+/**
+* This file contains the webpack config used for production builds
+*/
+
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');

@@ -1,3 +1,7 @@
+/**
+* This file contains the webpack config used for all builds
+*/
+
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
