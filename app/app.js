@@ -1,6 +1,8 @@
 import angular from 'angular';
 
-import $ from 'jquery'
+import $ from 'jquery';
+
+import modernizr from 'modernizr';
 
 //Import foundation styling
 //import 'styles/foundation.scss';

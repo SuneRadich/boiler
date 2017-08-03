@@ -25,7 +25,8 @@ const config = {
 config.resolve = {
     alias: {
         //Makes relative paths in the foundation setup easier to manage
-        'foundation.': 'node_modules/foundation-sites/js/entries/'
+        'foundation.': 'node_modules/foundation-sites/js/entries/',
+        'modernizr$': path.resolve(__dirname, './.modernizrrc.js')
     }
 };
 
@@ -57,6 +58,10 @@ config.output = TEST ? {} : {
  */
 config.module = {
     rules: [{
+        test: /\.modernizrrc\.js$/,
+        loader: 'webpack-modernizr-loader?useConfigFile',
+    },
+    {
             test: /\.js$/,
             loader: 'babel-loader',
             //Exclude the contents of node_modules except foundation-sites
