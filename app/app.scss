@@ -1,17 +1,5 @@
 h1 {
     text-transform: uppercase;
-
-    //Using a relative url to a asset in the interface setup
-    background: url('/images/hound.jpg') no-repeat 0 0;
-
-    //Using a css property that requires prefixing to work
-    flex: 1;
-}
-
-p {
-    //Using a Foundation sass function, because it is globally available to all .scss files in the solution
-    font-size: rem-calc(20);
-
-    //Using a variable defined in the custom variables.scss file
-    color: $myCustomColor;
+	background: url('/images/hound.jpg') no-repeat 0 0;
+	flex: 1;
 }
