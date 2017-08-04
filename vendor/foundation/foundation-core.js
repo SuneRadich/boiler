@@ -3,8 +3,6 @@
 * All plugin setup is handled in foundation-pgins.js
 */
 
-import './foundation.scss';
-
 //Load core logic and make foundation available as a jQuery plugin
 import $ from 'jquery';
 import { Foundation } from 'foundation/foundation.core';
