@@ -20,6 +20,10 @@
     "license": "ISC",
     "dependencies": {
         "angular": "^1.6.5",
+        "foundation-sites": "^6.4.1",
+        "jquery": "^3.2.1"
+    },
+    "devDependencies": {
         "angular-mocks": "^1.6.5",
         "autoprefixer": "^7.1.2",
         "babel-core": "^6.25.0",
@@ -32,11 +36,11 @@
         "copy-webpack-plugin": "^4.0.1",
         "css-loader": "^0.28.4",
         "extract-text-webpack-plugin": "^3.0.0",
-        "foundation-sites": "^6.4.1",
         "html-webpack-plugin": "^2.30.1",
         "jasmine": "^2.7.0",
-        "jquery": "^3.2.1",
         "karma": "^1.7.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "^1.1.0",
         "karma-phantomjs-launcher": "^1.0.4",
         "karma-webpack": "^2.0.4",
         "motion-ui": "^1.2.3",
@@ -50,9 +54,5 @@
         "webpack-dev-server": "^2.6.1",
         "webpack-merge": "^4.1.0",
         "webpack-modernizr-loader": "^3.0.1"
-    },
-    "devDependencies": {
-        "karma-chrome-launcher": "^2.2.0",
-        "karma-jasmine": "^1.1.0"
     }
 }
