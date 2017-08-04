@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 import './app.scss';
 
-//Import foundation javascript and scss
+//Import foundation javascript
 import "vendor/foundation/foundation";
 
 import controller from './app.controller';
