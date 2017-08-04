@@ -1,12 +1,4 @@
-// //Load default foundation from the npm package
-// @import 'foundation-sites/scss/foundation';
-//
-// //Load our custom overwrites of foundation settings
-// @import './settings';
-//
-// // ZURB utility to assist in animating things. It is used for foundation things like Toggler, Reveal and Orbit
-// //@see http://foundation.zurb.com/sites/docs/motion-ui.html
-// @import '~motion-ui/src/motion-ui';
+
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
