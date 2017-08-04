@@ -106,6 +106,27 @@ const config = {
                             }
                         },
 
+                        /**
+                        * Make select scss resources globally available for all scss files in the solution
+                        */
+                        {
+                            loader: 'sass-resources-loader',
+                            options: {
+                                resources: [
+                                    'app/variables.scss',
+
+                                    //Load default foundation from the npm package
+                                    'node_modules/foundation-sites/scss/foundation.scss',
+
+                                    // ZURB utility to assist in animating things. It is used for foundation things like Toggler, Reveal and Orbit
+                                    //@see http://foundation.zurb.com/sites/docs/motion-ui.html
+                                    'node_modules/motion-ui/src/motion-ui.scss',
+                                    'vendor/foundation/foundation.scss',
+                                    //Load our custom overwrites of foundation settings
+                                    'vendor/foundation/settings.scss',
+                                ]
+                            },
+                        },
                     ],
 
                     fallback: 'style-loader'
