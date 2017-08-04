@@ -1,11 +1,19 @@
+
 h1 {
     text-transform: uppercase;
 
-    //Using a relative url to a asset in the interface setup
-    background: url('/images/hound.jpg') no-repeat 0 0;
-
     //Using a css property that requires prefixing to work
     flex: 1;
+    display: flex;
+
+    &:after {
+        width: 100%;
+        content: '';
+        display: block;
+        //Using a relative url to a asset in the interface setup
+        background: url('/images/hound.jpg') no-repeat 0 0;
+        background-size: cover;
+    }
 }
 
 p {
