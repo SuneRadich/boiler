@@ -108,6 +108,8 @@ const config = {
 
                         /**
                         * Make select scss resources globally available for all scss files in the solution
+                        * NOTE: The included files can not generate actual css when built, otherwise the logic will
+                        * be included multiple times (once for each seperate .scss file imported to webpack)
                         */
                         {
                             loader: 'sass-resources-loader',
@@ -125,9 +127,6 @@ const config = {
                                     'vendor/foundation/settings.scss',
 
                                     'app/variables.scss',
-
-                                    //Initialize Foundation sass parts
-                                    'vendor/foundation/foundation.scss',
 
                                 ]
                             },

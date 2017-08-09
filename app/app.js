@@ -2,10 +2,12 @@ import modernizr from 'modernizr';
 import angular from 'angular';
 import $ from 'jquery';
 
-import './app.scss';
+import 'vendor/foundation/foundation.scss';
 
 //Import foundation javascript
 import "vendor/foundation/foundation";
+
+import './app.scss';
 
 import controller from './app.controller';
 import { Calc } from './services/calculate.service';
