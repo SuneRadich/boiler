@@ -1,6 +1,6 @@
 /**
-* This file contains the webpack config used for all builds
-*/
+ * This file contains the webpack config used for all builds
+ */
 
 const path = require('path');
 const webpack = require('webpack');
@@ -74,12 +74,18 @@ const config = {
                     fallback: 'style-loader'
                 })
             },
+
             {
                 test: /\.(ico|png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '/images/'
+                    }
+                }]
             },
+
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract({
@@ -107,10 +113,10 @@ const config = {
                         },
 
                         /**
-                        * Make select scss resources globally available for all scss files in the solution
-                        * NOTE: The included files can not generate actual css when built, otherwise the logic will
-                        * be included multiple times (once for each seperate .scss file imported to webpack)
-                        */
+                         * Make select scss resources globally available for all scss files in the solution
+                         * NOTE: The included files can not generate actual css when built, otherwise the logic will
+                         * be included multiple times (once for each seperate .scss file imported to webpack)
+                         */
                         {
                             loader: 'sass-resources-loader',
                             options: {
