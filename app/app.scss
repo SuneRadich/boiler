@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../public/fonts/merriweather-regular-webfont.eot');
+    src: url('../public/fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/fonts/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../public/fonts/merriweather-regular-webfont.woff') format('woff'),
+         url('../public/fonts/merriweather-regular-webfont.ttf') format('truetype'),
+         url('../public/fonts/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 h1 {
     text-transform: uppercase;
