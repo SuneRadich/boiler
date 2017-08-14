@@ -1,21 +1,20 @@
-
-before_script:
-  - npm install
+#before_script:
+#  - npm install
 
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
-cache:
-    paths:
-        - node_modules/
+#cache:
+#    paths:
+#        - node_modules/
 
 
 before_script:
-    - whoami
-    - git config --global core.autocrlf input
-    - git config core.filemode false
+#    - whoami
+#    - git config --global core.autocrlf input
+#    - git config core.filemode false
 #    - npm install grunt-cli
-    - npm install
+#    - npm install
 
 runtest:
     script:
-        - npm test
+        - npm install
