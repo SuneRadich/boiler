@@ -8,7 +8,7 @@
 #        - node_modules/
 
 
-before_script:
+#before_script:
 #    - whoami
 #    - git config --global core.autocrlf input
 #    - git config core.filemode false
