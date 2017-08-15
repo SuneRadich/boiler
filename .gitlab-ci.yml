@@ -13,6 +13,7 @@ before_script:
 #    - git config --global core.autocrlf input
 #    - git config core.filemode false
 #    - npm install grunt-cli
+    - npm rebuild node-sass
     - npm install npm@5
 
 runtest:
