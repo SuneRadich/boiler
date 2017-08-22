@@ -1,17 +1,52 @@
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs');
+const path = require('path');
 
-var workingFolder = path.join(__dirname, '/../', 'app/components/');
+var workingFolder = path.join(__dirname, '/../', 'app/components/'),
+    contents = [],
+    wstream;
 
-function buildComponents() {
+function generateFile() {
+
+    console.log('Generating angular \'component\' module');
+
+    if (fs.existsSync(workingFolder)) {
+        contents = fs.readdirSync(workingFolder);
+    }
+    else {
+        fs.mkdirSync(workingFolder);
+    }
 
     //Open filestream for writing
-    var wstream = fs.createWriteStream(path.join(workingFolder, 'components.js'));
-
-    //Get array of contents in the workingfolder
-    var contents = fs.readdirSync(workingFolder);
+    wstream = fs.createWriteStream(path.join(workingFolder, 'components.js'));
 
     wstream.write('//This file is auto-generated on webpack builds, DO NOT EDIT!\n');
+
+    //If we have any contents in the folder, build import statements for every folder
+    if (contents.length > 0) {
+        buildImports();
+    }
+
+    //Write the angular module declaration
+    wstream.write('var module = angular.module(\'components\', [])\n');
+
+    //If we have contents in the folder, add each of them as a component on the angular module
+    if (contents.length > 0) {
+        buildComponents();
+    }
+
+    //Prepare to export the module name
+    wstream.write('module.name = \'components\';\n');
+
+    //Export the angular module
+    wstream.write('export default module.name;\n');
+
+    //Close the stream
+    wstream.end();
+
+
+}
+
+function buildImports() {
 
     //Loop over the content
     contents.forEach(function(file, index) {
@@ -27,9 +62,9 @@ function buildComponents() {
             wstream.write(template);
         }
     });
+}
 
-    //Write the angular module declaration
-    wstream.write('angular.module(\'components\', [])');
+function buildComponents() {
 
     //Loop over contents again, this time generating the component configuration
     contents.forEach(function(file, index) {
@@ -44,17 +79,7 @@ function buildComponents() {
             wstream.write(template);
         }
     });
-
-    wstream.end();
-
 }
 
-//Test if we have a components folder at all
-if (fs.existsSync(workingFolder)) {
-    console.log('Generating component module');
-    buildComponents();
-}
-//Otherwise output that we have no components to build
-else {
-    console.log('Generating component module: No components found!');
-}
+//Start the script
+generateFile();
