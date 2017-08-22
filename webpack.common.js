@@ -154,6 +154,11 @@ const config = {
                     name: '[name].[ext]',
                     outputPath: '/fonts/'
                 }
+            },
+
+            {
+                test: /\.html/,
+                loader: 'raw-loader'
             }
         ]
     },
