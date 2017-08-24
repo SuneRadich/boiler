@@ -2,3 +2,5 @@ node_modules/
 dist/
 stats.json
 app/components/components.js
+app/filters/filters.js
+app/services/services.js
