@@ -178,7 +178,7 @@ const config = {
 
     plugins: [
         new WebpackShellPlugin({
-            onBuildStart:['node ./scripts/generateComponents.js'],
+            onBuildStart:['node ./scripts/generateModules.js'],
             //onBuildEnd:['node -v']
         }),
     ]
