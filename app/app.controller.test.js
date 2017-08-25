@@ -2,15 +2,13 @@ import './app';
 
 describe('app.controller', function() {
 
-	var ctrl, $scope;
+	var ctrl;
 
 	beforeEach(function() {
 
 		angular.mock.module('app');
 
-		inject(function(_$controller_, _rootScope_){
-
-			$scope = _$rootScope_.$new();
+		inject(function(_$controller_) {
 
 			//Initialize the controller
 			ctrl = _$controller_('appController', {
@@ -22,11 +20,6 @@ describe('app.controller', function() {
 
 	it('should set title', function() {
 		expect(ctrl.title).toBe('Default demo controller');
-	});
-
-	it('should set result', function() {
-		expect(calcService.add).toHaveBeenCalledWith(2, 2);
-		expect(ctrl.result).toBe(4);
 	});
 
 });
