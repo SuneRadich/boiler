@@ -1,0 +1,17 @@
+//This file is auto-generated on webpack builds, DO NOT EDIT!
+
+import angular from 'angular';
+
+import '../services/services';
+
+{{#items}}
+import {{name}} from './{{name}}/{{name}}.filter';
+{{/items}}
+
+var module = angular.module('filters', ['services'])
+{{#items}}
+    .filter('{{name}}', {{name}})
+{{/items}}
+    .name = 'filters';
+
+export default module.name;

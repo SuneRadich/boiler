@@ -1,0 +1,15 @@
+//This file is auto-generated on webpack builds, DO NOT EDIT!
+
+import angular from 'angular';
+
+{{#items}}
+import {{name}} from './{{name}}/{{name}}.service';
+{{/items}}
+
+var module = angular.module('services', [])
+{{#items}}
+    .service('{{name}}', {{name}})
+{{/items}}
+    .name = 'services';
+
+export default module.name;
