@@ -2,23 +2,19 @@ import './app';
 
 describe('app.controller', function() {
 
-	var ctrl, calcService, $scope;
+	var ctrl, $scope;
 
 	beforeEach(function() {
 
 		angular.mock.module('app');
 
-		inject(function(_$controller_, _Calculator_, _$rootScope_){
-			//Make the injected service available to the test
-			calcService = _Calculator_;
-			$scope = _$rootScope_.$new();
+		inject(function(_$controller_, _rootScope_){
 
-			//Spy on the add method
-			spyOn(_Calculator_, 'add').and.callThrough();
+			$scope = _$rootScope_.$new();
 
 			//Initialize the controller
 			ctrl = _$controller_('appController', {
-				Calculator: _Calculator_
+
 			});
 
 		})
