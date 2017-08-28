@@ -8,7 +8,7 @@ import '../services/services';
 import {{name}} from './{{name}}/{{name}}.filter';
 {{/items}}
 
-var module = angular.module('filters', ['services'])
+var module = angular.module('filters', [{{#dependencies}}'{{.}}'{{#unless @last}}, {{/unless}}{{/dependencies}}])
 {{#items}}
     .filter('{{name}}', {{name}})
 {{/items}}

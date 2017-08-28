@@ -29,7 +29,6 @@ function generateModule(type) {
 */
 function writeFile(type, rawTemplate) {
 
-
     var workingFolder = path.join(__dirname, '../../', `app/${type}s/`);
     var contents = [];
 
@@ -40,8 +39,15 @@ function writeFile(type, rawTemplate) {
 
     var template = Handlebars.compile(rawTemplate);
 
+
+
     if (fs.existsSync(workingFolder)) {
         contents = fs.readdirSync(workingFolder);
+
+        //check if we have a config.js file, that will hold info about any module dependencies
+        if (fs.existsSync(path.join(workingFolder, 'config.js'))) {
+            data.dependencies = require(workingFolder +  '/config.js').dependencies;
+        }
     } else {
         fs.mkdirSync(workingFolder);
     }

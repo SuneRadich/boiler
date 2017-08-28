@@ -6,7 +6,7 @@ import angular from 'angular';
 import {{name}} from './{{name}}/{{name}}.service';
 {{/items}}
 
-var module = angular.module('services', [])
+var module = angular.module('services', [{{#dependencies}}'{{.}}'{{#unless @last}}, {{/unless}}{{/dependencies}}])
 {{#items}}
     .service('{{name}}Service', {{name}})
 {{/items}}
