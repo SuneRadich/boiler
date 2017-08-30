@@ -15,7 +15,7 @@ const Handlebars = require('handlebars');
 */
 function generateModule(type) {
 
-    fs.readFile(path.join(__dirname, `/${type}s.hbs`), 'utf8', function(err, templateString) {
+    fs.readFile(path.join(__dirname, `/${type}.hbs`), 'utf8', function(err, templateString) {
         if (err) {
             return console.log('err', err);
         }
@@ -29,7 +29,7 @@ function generateModule(type) {
 */
 function writeFile(type, rawTemplate) {
 
-    var workingFolder = path.join(__dirname, '../../', `app/${type}s/`);
+    var workingFolder = path.join(__dirname, '../../', `app/${type}/`);
     var contents = [];
 
     var data = {
@@ -38,8 +38,6 @@ function writeFile(type, rawTemplate) {
     };
 
     var template = Handlebars.compile(rawTemplate);
-
-
 
     if (fs.existsSync(workingFolder)) {
         contents = fs.readdirSync(workingFolder);
@@ -63,7 +61,7 @@ function writeFile(type, rawTemplate) {
         }
     });
 
-    fs.writeFile(path.join(workingFolder, `${type}s.js`), template(data), function(err) {
+    fs.writeFile(path.join(workingFolder, `${type}.js`), template(data), function(err) {
         if (err) {
             return console.log('err', err);
         }
